@@ -1,0 +1,7 @@
+#include<cstdio>
+int num2= 10; //global variable
+int main(){
+ int num = 20; // Local variable
+
+
+}

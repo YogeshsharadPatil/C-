@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+class Student{
+		char name[50];
+		int rollNumber;
+		int marks;
+		char grade;
+public:
+		Student(){
+			this->name = "Your Name";
+			this->rollNumber = 1;
+			this->marks = 100;
+			this->grade = 'A';
+		}
+
+		void setName(string name){   //if u write other than name as paramter there is no need of this pointer
+			this->name=name;
+		}
+
+		void setrollNumber(int rollnumber){ //paramter name different so no need of this pointer
+				rollNumber=rollnumber;
+			}
+		void setMarks(int marks){
+			this->marks = marks;
+		}
+		void setGrade(int marks){
+				this->grade = calculateGrade();
+		}
+		char calculateGrade();
+		void acceptRecord();
+		void displayRecord();
+
+};
+int menu_List(){
+
+	cout<<"1.Accept Information : "<<endl;
+	cout<<"2.Display Information:"<<endl;
+	cout<<"3.Calculate Grade: "<<endl;
+	cout<<"0.Exit : "<<endl;
+	int choice;
+   cout<<"Enter your choice: "<<endl;
+   cin>>choice;
+   return choice;
+   }
+int main(){
+
+	Student s1;
+  int n1;
+  int n2;
+  cout<<"Enter number1: "<<endl;
+  cin>>n1;
+  cout<<"Enter Number2: "<<endl;
+  cin>>n2;
+
+int rchoice;
+  while( (rchoice=::menu_List() )!=0){
+
+
+  }
+  clog<<"Thank You";
+  return 0;
+  }
+
+

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+	A( void ){
+
+	}
+};
+class B : public A{
+private:
+	B( void ){
+
+	}
+};
+int main( void ){
+	B b;
+	return 0;
+}
+

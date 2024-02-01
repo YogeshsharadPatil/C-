@@ -1,0 +1,10 @@
+#include<Employee>
+int main(){
+
+	Employee emp;
+	acceptRecord(emp);
+	printRecord(emp);
+}
+
+
+

@@ -1,0 +1,22 @@
+!SESSION 2023-09-14 07:58:25.775 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -keyring /Users/sandeep/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.cpp.product -keyring /Users/sandeep/.eclipse_keyring
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-14 07:59:55.461
+!MESSAGE Indexed 'Day_3.1' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-14 08:18:32.144
+!MESSAGE Indexed 'Day_3.2' (1 sources, 86 headers) in 1.58 sec: 2,079 declarations; 3,140 references; 0 unresolved inclusions; 8 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-14 08:42:57.135
+!MESSAGE Indexed 'Day_3.3' (1 sources, 36 headers) in 0.833 sec: 498 declarations; 1,315 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-14 10:07:28.234
+!MESSAGE Indexed 'Day_3.4' (1 sources, 0 headers) in 0.028 sec: 17 declarations; 26 references; 1 unresolved inclusions; 0 syntax errors; 9 unresolved names (17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-14 10:13:18.035
+!MESSAGE Indexed 'Day_3.5' (1 sources, 36 headers) in 0.659 sec: 495 declarations; 1,286 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)

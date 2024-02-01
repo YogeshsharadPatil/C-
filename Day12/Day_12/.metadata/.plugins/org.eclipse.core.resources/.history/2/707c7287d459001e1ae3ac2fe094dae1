@@ -1,0 +1,3 @@
+Person( );
+	Person( string name, int age );
+	void printRecord( void );

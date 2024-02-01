@@ -1,0 +1,58 @@
+#include<cstdio>
+#include<cstdlib>
+int main( void ){
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	};
+
+	struct Employee emp1;	//Static memory allocation
+
+	 struct Employee *ptr  = malloc( sizeof( struct Employee ) );
+	return 0;
+}
+int main4( void ){
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	} emp1;	//Here emp1 is object
+
+	struct Employee emp2;
+
+	return 0;
+}
+int main3( void ){
+	typedef struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	}Employee_t;	//Here Employee_t is alias for struct Employee
+	Employee_t emp;	//Object
+	Employee_t *ptr;	//pointer
+	return 0;
+}
+int main2( void ){
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	};
+	typedef struct Employee Employee_t;
+
+	Employee_t emp;	//Object
+	Employee_t *ptr;	//pointer
+	return 0;
+}
+int main1( void ){
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	};
+
+	struct Employee emp;	//Object
+	struct Employee *ptr;	//pointer
+	return 0;
+}

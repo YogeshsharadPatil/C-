@@ -1,0 +1,16 @@
+01:01:32 **** Incremental Build of configuration Debug for project Day12.5Demo ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp:3:1: error: new types may not be defined in a return type
+    3 | class Product {
+      | ^~~~~
+..\src\Main.cpp:3:1: note: (perhaps a semicolon is missing after the definition of 'Product')
+..\src\Main.cpp:19:17: error: declaration of '~ Product' as non-member
+   19 |          virtual~Product(){
+      |                 ^~~~~~~~
+..\src\Main.cpp:22:1: error: expected declaration before '}' token
+   22 | };
+      | ^
+
+01:01:33 Build Failed. 3 errors, 0 warnings. (took 1s.349ms)
+

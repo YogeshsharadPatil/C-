@@ -1,0 +1,12 @@
+#include<cstdio>
+
+
+namespace na{
+	int num1 = 10;
+}
+int main( void ){
+	using namespace na;
+	printf("Num1	:	%d\n", num1 );	//20
+
+	return 0;
+}

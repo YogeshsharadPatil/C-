@@ -1,0 +1,9 @@
+12:52:40 **** Rebuild of configuration Debug for project Day7.8TryCatchNested ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:19:17: warning: catching polymorphic type 'class std::exception' by value [-Wcatch-value=]
+   19 | catch(exception e){
+      |                 ^
+g++ -o Day7.8TryCatchNested.exe "src\\Main.o" 
+Info: Nothing to build for Day7.8TryCatchNested

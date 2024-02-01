@@ -1,0 +1,8 @@
+#ifndef CALCULATOR_
+#define CALCULATOR_
+
+namespace util{
+	
+}
+
+#endif /* CALCULATOR_ */

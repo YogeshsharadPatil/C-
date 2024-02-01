@@ -1,0 +1,8 @@
+#include<iostream>
+#include<complex>
+using namespace std;
+
+int main( void ){
+	complex<double> c1;
+	return 0;
+}

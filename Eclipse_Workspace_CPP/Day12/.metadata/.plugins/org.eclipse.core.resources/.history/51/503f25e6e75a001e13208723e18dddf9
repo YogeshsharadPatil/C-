@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Rectangle{
+protected:
+	int length;
+	int breadth;
+	int area;
+public:
+	Rectangle(){
+		this->length = 1;
+		this->breadth = 1;
+		this->area = 1;
+	}
+};
+class Circle{
+
+};
+
+int main(){
+	return 0;
+}

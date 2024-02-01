@@ -1,0 +1,6 @@
+#include<cstdio>
+int num2= 10;
+int main(){
+ int num = 20;
+
+}

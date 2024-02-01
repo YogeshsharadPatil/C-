@@ -1,0 +1,11 @@
+16:02:38 **** Rebuild of configuration Debug for project Day3.2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.c" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Day3.2.exe ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "src\\Employee.o" "src\\Main.o" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" "..\\.metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.cpp" 
+
+16:02:41 Build Finished. 0 errors, 0 warnings. (took 3s.539ms)
+
+Info: Nothing to build for Day3.2

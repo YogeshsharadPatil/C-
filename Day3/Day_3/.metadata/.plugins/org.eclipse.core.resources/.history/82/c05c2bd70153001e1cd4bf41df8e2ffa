@@ -1,0 +1,4 @@
+int num1 = 10;	//Non static global variable
+
+static int num2 = 20;		//Static global variable
+

@@ -1,0 +1,81 @@
+09:20:07 **** Clean-only build of configuration Debug for project Day_4.3 ****
+make clean 
+rm -rf ./src/Employee.d ./src/Employee.o ./src/Main.d ./src/Main.o
+rm -rf Day_4.3
+ 
+09:20:14 **** Build of configuration Debug for project Day_4.3 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+Finished building: ../src/Employee.cpp
+ 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_4.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_4.3"  ./src/Employee.o ./src/Main.o   
+Finished building target: Day_4.3
+ 
+09:20:31 **** Incremental Build of configuration Debug for project Day_4.3 ****
+make all 
+make: Nothing to be done for `all'.
+09:46:08 **** Build of configuration Debug for project Day_4.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:15:16: error: expected ';' after expression
+                cin >> salary
+                             ^
+                             ;
+../src/Main.cpp:23:6: error: no member named 'printRecord' in 'Employee'
+        emp.printRecord( );
+        ~~~ ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:46:42 **** Incremental Build of configuration Debug for project Day_4.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:23:6: error: no member named 'printRecord' in 'Employee'
+        emp.printRecord( );
+        ~~~ ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:47:25 **** Incremental Build of configuration Debug for project Day_4.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_4.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_4.4"  ./src/Main.o   
+Finished building target: Day_4.4
+ 
+09:47:58 **** Incremental Build of configuration Debug for project Day_4.4 ****
+make all 
+make: Nothing to be done for `all'.
+09:50:01 **** Incremental Build of configuration Debug for project Day_4.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_4.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_4.4"  ./src/Main.o   
+Finished building target: Day_4.4
+ 
+09:50:15 **** Incremental Build of configuration Debug for project Day_4.4 ****
+make all 
+make: Nothing to be done for `all'.

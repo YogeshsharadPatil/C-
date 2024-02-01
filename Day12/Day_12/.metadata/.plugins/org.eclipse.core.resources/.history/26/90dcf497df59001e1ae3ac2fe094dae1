@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+	A( void ){
+
+	}
+};
+class B : public A{
+public:
+	B( void ){
+
+	}
+};
+class C : public A{
+public:
+	C( void ){
+
+	}
+};
+int main( void ){
+	B b;
+	return 0;
+}
+

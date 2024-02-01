@@ -1,0 +1,50 @@
+11:54:45 **** Clean-only build of configuration Debug for project Day_7.7 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_7.7
+ 
+11:54:49 **** Build of configuration Debug for project Day_7.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_7.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_7.7"  ./src/Main.o   
+Finished building target: Day_7.7
+ 
+11:54:57 **** Incremental Build of configuration Debug for project Day_7.7 ****
+make all 
+make: Nothing to be done for `all'.
+11:55:10 **** Incremental Build of configuration Debug for project Day_7.7 ****
+make all 
+make: Nothing to be done for `all'.
+11:57:06 **** Incremental Build of configuration Debug for project Day_7.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_7.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_7.7"  ./src/Main.o   
+Finished building target: Day_7.7
+ 
+11:57:15 **** Incremental Build of configuration Debug for project Day_7.7 ****
+make all 
+make: Nothing to be done for `all'.
+11:57:25 **** Incremental Build of configuration Debug for project Day_7.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_7.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_7.7"  ./src/Main.o   
+Finished building target: Day_7.7
+ 

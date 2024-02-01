@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+
+class A{
+private:
+	int num1;
+	int num2;
+public:
+	A( void ){
+		this->num1 = 10;
+		this->num2 = 20;
+	}
+	A( int num1, int num2 ){
+		this->num1 = num1;
+		this->num2 = num2;
+	}
+	void showRecord( void ){
+		cout << "Num1	:	" << this->num1 << endl;
+		cout << "Num2	:	" << this->num2 << endl;
+	}
+	void printRecord( void ){
+		cout << "Num1	:	" << this->num1 << endl;
+		cout << "Num2	:	" << this->num2 << endl;
+	}
+};
+class B : public A{
+private:
+	int num3;
+public:
+	B( void ){
+		this->num3 = 30;
+	}
+	B( int num1, int num2, int num3 ) : A( num1, num2 ){
+		this->num3 = num3;
+	}
+	void printRecord( void ){
+		A::printRecord( );
+		cout << "Num3	:	" << this->num3 << endl;
+	}
+	void displayRecord( void ){
+		A::showRecord( );
+		cout << "Num3	:	" << this->num3 << endl;
+	}
+};
+int main( void ){
+	A *ptr = new A( );
+	ptr->showRecord( );		//OK: A::showRecord( );
+	//a1.printRecord( );	//OK: A::printRecord( );
+	//a1.displayRecord( );	//Not OK:  error: no member named 'displayRecord' in 'A'
+	//a1.B::printRecord( );	//Not OK:  error: 'B::printRecord' is not a member of class 'A'
+	delete ptr;
+}
+int main1( void ){
+	A a1;
+	//a1.showRecord( );		//OK: A::showRecord( );
+	//a1.printRecord( );	//OK: A::printRecord( );
+	//a1.displayRecord( );	//Not OK:  error: no member named 'displayRecord' in 'A'
+	//a1.B::printRecord( );	//Not OK:  error: 'B::printRecord' is not a member of class 'A'
+	return 0;
+}

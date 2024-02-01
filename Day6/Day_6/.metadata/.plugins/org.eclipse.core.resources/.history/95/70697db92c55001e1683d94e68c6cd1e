@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class Test{
+private:
+	int num1;
+	int num2;
+	int count;
+public:
+	Test( void ) : num1( 0 ), num2( 0 ), count( 0 ){
+		this->num1 = this->num1 + 10;	//10
+		this->num2 = this->num2 + 20;	//20
+	}
+	void showRecord( /* Test *const this = &t1 */ ){
+		this->num1 = this->num1 + 5;
+		cout << "Num1	:	" << this->num1 << endl;
+
+		this->num2 = this->num2 + 5;
+		cout << "Num2	:	" << this->num2 << endl;
+
+		cout << "Count	:	" << this->count << endl;
+	}
+	void printRecord( void ){
+		cout << "Num1	:	" << this->num1 << endl;
+		cout << "Num2	:	" << this->num2 << endl;
+		cout << "Count	:	" << this->count << endl;
+	}
+};
+int main( void ){
+	Test t1;
+	t1.showRecord( );
+	return 0;
+}
+int main1( void ){
+	int num1 = 10;
+	int *const ptr1 = &num1;
+	*ptr1 = 50;	//OK
+	cout << "Num1	:	" << num1 << endl;
+	cout << "Num1	:	" << *ptr1 << endl;	//OK
+
+	const int num2 = 20;
+	const int *const ptr2 = & num2;
+	//*ptr2 = 60;	//Not OK
+	cout << "Num2	:	" << num2 << endl;
+	cout << "Num2	:	" << *ptr2 << endl;	//OK
+	return 0;
+}

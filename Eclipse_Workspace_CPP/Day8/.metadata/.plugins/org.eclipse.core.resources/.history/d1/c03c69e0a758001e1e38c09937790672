@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main() {
+
+  int **ptr = new int*int[2];
+  for (int var = 0; var < 2; ++var) {
+	ptr[var]=new int[3];
+}
+
+	return 0;
+}
+

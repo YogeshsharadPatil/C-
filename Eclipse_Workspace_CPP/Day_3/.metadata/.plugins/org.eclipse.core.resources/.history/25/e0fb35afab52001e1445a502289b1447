@@ -1,0 +1,53 @@
+#include<cstdio>
+//Global Structure
+struct Employee{
+	char name[ 30 ];
+	int empid;
+	float salary;
+};
+void accept_record( struct Employee *ptr ){	//Called function
+	printf("Name	:	");
+	scanf("%s", ptr->name );
+	printf("Empid	:	");
+	scanf("%d", &ptr->empid );
+	printf("Salary	:	");
+	scanf("%f", &ptr->salary );
+}
+void print_record( struct Employee *ptr ){	//Called function
+	printf("Name	:	%s\n", ptr->name);
+	printf("Empid	:	%d\n", ptr->empid);
+	printf("Salary	:	%f\n", ptr->salary);
+}
+int main( void ){	//Calling function
+	struct Employee emp;
+
+	accept_record( &emp );	//Here emp is function argument / argument
+
+	print_record( &emp );	//Here emp is function argument / argument
+
+	return 0;
+}
+
+int main1( void ){
+	//Local Structure
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	};
+
+	struct Employee emp;
+
+	printf("Name	:	");
+	scanf("%s", emp.name );
+	printf("Empid	:	");
+	scanf("%d", &emp.empid );
+	printf("Salary	:	");
+	scanf("%f", &emp.salary );
+
+	printf("Name	:	%s\n", emp.name);
+	printf("Empid	:	%d\n", emp.empid);
+	printf("Salary	:	%f\n", emp.salary);
+
+	return 0;
+}

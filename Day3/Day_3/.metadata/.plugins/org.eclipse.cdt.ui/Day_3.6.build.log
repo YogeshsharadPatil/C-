@@ -1,0 +1,14 @@
+18:53:33 **** Incremental Build of configuration Debug for project Day_3.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:7:9: error: cannot combine with previous 'extern' declaration specifier
+        extern static int num2;
+               ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:53:34 Build Failed. 2 errors, 0 warnings. (took 444ms)
+

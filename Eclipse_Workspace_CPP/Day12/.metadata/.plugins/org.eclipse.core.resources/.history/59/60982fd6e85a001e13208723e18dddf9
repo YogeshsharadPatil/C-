@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Rectangle{
+protected:
+	int length;
+	int breadth;
+	int area;
+public:
+	Rectangle(){
+		this->length = 1;
+		this->breadth = 1;
+		this->area = 1;
+	}
+	int calculate(){
+		return this->area = this->length * this->breadth;
+	}
+	void acceptRecord(){
+		cin>>this->length;
+		cin>>this->breadth;
+	}
+	void printRecord(){
+		cout<<this->length;
+		cout<<this->area;
+	}
+};
+class Circle{
+
+};
+
+int main(){
+	return 0;
+}

@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+// We can declare static data member as a constatnt but
+//We can not declare static member function as constant
+//cause:- static member function are called on object
+// where as static member function are designed fopr classes
+int main(){
+
+	return  0;
+}
+

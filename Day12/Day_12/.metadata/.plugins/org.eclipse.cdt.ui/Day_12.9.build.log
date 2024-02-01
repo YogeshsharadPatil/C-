@@ -1,0 +1,16 @@
+17:58:18 **** Incremental Build of configuration Debug for project Day_12.9 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:99:6: error: ambiguous conversion from derived class 'D' to base class 'A':
+    class D -> class B -> class A
+    class D -> class C -> class A
+                A::showRecord( );               //???
+                   ^~~~~~~~~~
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+17:58:19 Build Failed. 2 errors, 0 warnings. (took 1s.752ms)
+

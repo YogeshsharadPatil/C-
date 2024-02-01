@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int arr1[3] = {10,20,30};
+  int &arr2[3] = arr1;
+  for(int i = 0 ;i<arr2.sizeof();i++){
+           cout<<arr2[i]<<" ";
+  }
+	return 0;
+}

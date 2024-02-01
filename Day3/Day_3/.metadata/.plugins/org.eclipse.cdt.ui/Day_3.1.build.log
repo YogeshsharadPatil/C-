@@ -1,0 +1,40 @@
+08:15:57 **** Incremental Build of configuration Debug for project Day_3.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:46:18: warning: unused variable 'emp2' [-Wunused-variable]
+        struct Employee emp2;
+                        ^
+../src/Main.cpp:44:4: warning: unused variable 'emp1' [-Wunused-variable]
+        } emp1; //Here emp1 is object
+          ^
+../src/Main.cpp:57:14: warning: unused variable 'ptr' [-Wunused-variable]
+        Employee_t *ptr;        //pointer
+                    ^
+../src/Main.cpp:56:13: warning: unused variable 'emp' [-Wunused-variable]
+        Employee_t emp; //Object
+                   ^
+../src/Main.cpp:68:13: warning: unused variable 'emp' [-Wunused-variable]
+        Employee_t emp; //Object
+                   ^
+../src/Main.cpp:69:14: warning: unused variable 'ptr' [-Wunused-variable]
+        Employee_t *ptr;        //pointer
+                    ^
+../src/Main.cpp:80:19: warning: unused variable 'ptr' [-Wunused-variable]
+        struct Employee *ptr;   //pointer
+                         ^
+../src/Main.cpp:79:18: warning: unused variable 'emp' [-Wunused-variable]
+        struct Employee emp;    //Object
+                        ^
+8 warnings generated.
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_3.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_3.1"  ./src/Main.o   
+Finished building target: Day_3.1
+ 
+
+08:15:58 Build Finished. 0 errors, 8 warnings. (took 1s.97ms)
+

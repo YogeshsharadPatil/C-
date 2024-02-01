@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+class InstanceCounter{
+private:
+	static int count;
+public:
+	InstanceCounter( ){
+
+	}
+	static int getCount( void ){
+		return InstanceCounter::count;
+	}
+};
+int InstanceCounter::count = 0;
+int main( void ){
+	cout << "Instance Counter	:	" << InstanceCounter::getCount( ) << endl;
+	return 0;
+}

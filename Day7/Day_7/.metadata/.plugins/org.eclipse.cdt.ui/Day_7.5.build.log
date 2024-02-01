@@ -1,0 +1,20 @@
+10:00:44 **** Incremental Build of configuration Debug for project Day_7.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:14:2: error: call to 'print' is ambiguous
+        print( value );
+        ^~~~~
+../src/Main.cpp:4:6: note: candidate function
+void print( int number ){
+     ^
+../src/Main.cpp:7:6: note: candidate function
+void print( int &number ){
+     ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+10:00:48 Build Failed. 2 errors, 0 warnings. (took 3s.300ms)
+

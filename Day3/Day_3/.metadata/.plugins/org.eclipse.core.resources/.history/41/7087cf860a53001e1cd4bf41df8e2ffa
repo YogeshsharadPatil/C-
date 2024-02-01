@@ -1,0 +1,8 @@
+#include<cstdio>
+
+int main( void ){
+	namespace na{	//error: namespaces can only be defined in global or namespace scope
+		int num1 = 10;
+	}
+	return 0;
+}

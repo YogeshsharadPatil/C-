@@ -1,0 +1,7 @@
+#include<cstdio>
+int main(){
+	printf("Enter Number\n");
+	int num;
+	scanf("%d",&num);
+	return 0;
+}

@@ -1,0 +1,54 @@
+#include<cstdio>
+void accept_record( struct Employee emp ){
+	printf("Name	:	");
+	scanf("%s", emp.name );
+	printf("Empid	:	");
+	scanf("%d", &emp.empid );
+	printf("Salary	:	");
+	scanf("%f", &emp.salary );
+}
+void print_record( struct Employee emp ){
+	printf("Name	:	%s\n", emp.name);
+	printf("Empid	:	%d\n", emp.empid);
+	printf("Salary	:	%f\n", emp.salary);
+}
+int main( void ){
+	//Local Structure
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	};
+
+	struct Employee emp;
+
+	accept_record( emp );	//Here emp is function argument / argument
+
+	print_record( emp );	//Here emp is function argument / argument
+
+	return 0;
+}
+
+int main1( void ){
+	//Local Structure
+	struct Employee{
+		char name[ 30 ];
+		int empid;
+		float salary;
+	};
+
+	struct Employee emp;
+
+	printf("Name	:	");
+	scanf("%s", emp.name );
+	printf("Empid	:	");
+	scanf("%d", &emp.empid );
+	printf("Salary	:	");
+	scanf("%f", &emp.salary );
+
+	printf("Name	:	%s\n", emp.name);
+	printf("Empid	:	%d\n", emp.empid);
+	printf("Salary	:	%f\n", emp.salary);
+
+	return 0;
+}

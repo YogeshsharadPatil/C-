@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Matrix{
+private:
+	int row;
+	int col;
+	int **arr;
+public:
+	Matrix( void ){
+		this->row = 0;
+		this->col = 0;
+		this->arr = nullptr;
+	}
+	Matrix( int row, int col ){
+		this->row = row;
+		this->col = col;
+		for( int index = 0; index < this->row; ++ index )
+			this->arr[ index ] = new int[ 3 ];
+	}
+	~Matrix( void ){
+		if( this->arr != nullptr ){
+			for( int index = 0; index < this->row; ++ index )
+				delete[] this->arr[ index ];
+			delete[] this->arr;
+			this->arr = nullptr;
+		}
+	}
+};
+int main( void ){
+	Matrix m1( 2, 3 );
+	return 0;
+}

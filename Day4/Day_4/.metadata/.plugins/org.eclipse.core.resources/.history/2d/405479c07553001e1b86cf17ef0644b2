@@ -1,0 +1,14 @@
+#include<iostream>
+int main( void ){
+	int number;
+	//printf("%d", number);
+	std::cout <<  number << std::endl;
+	return 0;
+}
+int main1( void ){
+	//std::cout << "Hello World" << std::endl;
+
+	using namespace std;
+	cout << "Hello World" << endl;
+	return 0;
+}

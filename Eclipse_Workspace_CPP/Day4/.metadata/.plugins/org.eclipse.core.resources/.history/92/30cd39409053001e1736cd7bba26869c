@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class Date{
+	int date;
+	int month;
+	int year;
+
+public:
+	void acceptRecord();
+	void printRecord();
+	void validatedate();
+
+};
+
+int main(){
+
+  return 0;
+
+}
+
+
+

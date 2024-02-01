@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+void accept_record( int &number ){
+	cout << "Number	:	";
+	cin >> number;
+}
+void print_record( int &result ){
+	cout << "Result	:	" << result << endl;
+}
+int main1( void ){
+	cout <<"File/Connection Open"<<endl;
+
+	int num1;
+	accept_record( num1 );
+
+	int num2;
+	accept_record( num2 );
+
+	try{
+		if( num2 == 0 ){
+			const char *ex = "exception";
+			throw ex;
+		}else{
+			int result = num1 / num2;
+			print_record( result );
+		}
+	}
+	catch( int ex ){
+		cout << "handling exception in int catch block "<<endl;
+	}
+	catch( double ex ){
+		cout << "handling exception in double catch block "<<endl;
+	}
+	catch(...){
+		cout<<"Exception"<<endl;
+	}
+	cout <<"File/Connection Close"<<endl;
+	return 0;
+}
+int main( void ){
+	cout <<  __LINE__ << endl;
+
+	cout <<  __FUNCTION__ << endl;
+	return 0;
+}
+
+

@@ -1,0 +1,21 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+
+int main( void ){
+	//Memory allocation for single integer variable
+	int *ptr = (int*)malloc( 3 * sizeof( int ) );
+
+	//Dereferencing
+	ptr[ 0 ] = 10;	//*( ptr + 0 )	= 10
+	ptr[ 1 ] = 20;	//*( ptr + 1 )	= 20
+	ptr[ 2 ] = 30;	//*( ptr + 2 )	= 30
+
+	//Dereferencing
+	for( int index = 0; index < 0; ++ index )
+		cout << ptr [ index ] <<endl;	//cout << *( ptr + index ) <<endl;
+
+	//Memory deallocation for single integer variable
+	free( ptr );
+	return 0;
+}

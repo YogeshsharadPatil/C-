@@ -1,0 +1,14 @@
+#include <string>
+
+using namespace std;
+int main(){
+try {
+	string ex;
+	throw ex;
+	try {
+
+	} catch (Exception &e) {
+	}
+} catch (Exception e) {
+}
+}

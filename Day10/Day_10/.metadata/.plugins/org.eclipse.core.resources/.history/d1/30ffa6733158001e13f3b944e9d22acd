@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+	static void f1( void ){
+		cout << "A::f1" << endl;
+	}
+};
+class B{
+public:
+	static void f2( void ){
+		cout << "B::f2" << endl;
+	}
+	static void f3( void ){
+		B::f2( );
+	}
+};
+int main( void ){
+	B::f3( );
+	return 0;
+}

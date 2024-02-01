@@ -1,0 +1,82 @@
+#include<iostream>
+using namespace std;
+class Book{
+private:
+	string name;
+	int price;
+	int pagescount;
+public:
+	Book(){
+		this->name = "BookName";
+		this->price = 1;
+		this->pagescount = 0;
+	}
+
+	void acceptRecord(){
+		cout<<"Enter Book name: ";
+		cin>>this->name;
+		cout<<"Price: ";
+		cin>>this->price;
+		cout<<"Page count: ";
+		cin>>this->pagescount;
+	}
+	void printRecord(){
+		cout<<"Book Name"<<this->name<<endl;
+		cout<<"Book price "<<this->price<<endl;
+		cout<<"Book pagecount"<<this->pagescount<<endl;
+	}
+};
+class Tape{
+private:
+	string name;
+	int price;
+	int playTime;
+
+public:
+	Tape(){
+		this->name = "TapeName";
+		this->price = 1;
+		this->playTime = 0;
+	}
+
+	void acceptRecord(){
+		cout<<"Enter Tape name: ";
+		cin>>this->name;
+		cout<<"Price: ";
+		cin>>this->price;
+		cout<<"Play Time : ";
+		cin>>this->playTime;
+	}
+	void printRecord(){
+		cout<<"Tape Name"<<this->name<<endl;
+		cout<<" price "<<this->price<<endl;
+		cout<<"PlayTime"<<this->playTime<<endl;
+	}
+
+};
+int menulist(){
+	cout<<"0.Exit<<"<<endl;
+	cout<<"1.Book"<<endl;
+	cout<<"2.Tape"<<endl;
+	cout<<"Enter choice"<<endl;
+	int choice;
+	cin>>choice;
+	return choice;
+}
+int main(){
+	int choice;
+	while((choice=::menulist())!=0){
+		Book b1;
+		Tape t1;
+		switch(choice){
+		case 1:
+			b1.acceptRecord();
+			b1.printRecord();
+
+
+		}
+	}
+
+
+	return 0;
+}

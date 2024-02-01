@@ -1,0 +1,126 @@
+10:13:26 **** Clean-only build of configuration Debug for project Day_3.5 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_3.4
+ 
+10:16:53 **** Clean-only build of configuration Debug for project Day_3.5 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_3.4
+ 
+10:16:53 **** Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+../src/Employee.cpp:1:6: error: use of undeclared identifier 'Employee'
+void Employee::acceptRecord( void ){    //Member function
+     ^
+../src/Employee.cpp:10:6: error: use of undeclared identifier 'Employee'
+void Employee::printRecord( void ){     //Member function
+     ^
+2 errors generated.
+make: *** [src/Employee.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:18:05 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+../src/Employee.cpp:1:9: fatal error: 'Employee.h' file not found
+#include<Employee.h>
+        ^~~~~~~~~~~~
+1 error generated.
+make: *** [src/Employee.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:19:52 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+../src/Employee.cpp:1:9: fatal error: 'Employee.h' file not found
+#include"Employee.h"
+        ^~~~~~~~~~~~
+1 error generated.
+make: *** [src/Employee.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:20:19 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+../src/Employee.cpp:1:9: fatal error: '../inlude/Employee.h' file not found
+#include"../inlude/Employee.h"
+        ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [src/Employee.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:20:26 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+../src/Employee.cpp:3:2: error: use of undeclared identifier 'printf'
+        printf("Name    :       ");
+        ^
+../src/Employee.cpp:4:2: error: use of undeclared identifier 'scanf'
+        scanf("%s", name );
+        ^
+../src/Employee.cpp:5:2: error: use of undeclared identifier 'printf'
+        printf("Empid   :       ");
+        ^
+../src/Employee.cpp:6:2: error: use of undeclared identifier 'scanf'
+        scanf("%d", &empid );
+        ^
+../src/Employee.cpp:7:2: error: use of undeclared identifier 'printf'
+        printf("Salary  :       ");
+        ^
+../src/Employee.cpp:8:2: error: use of undeclared identifier 'scanf'
+        scanf("%f", &salary );
+        ^
+../src/Employee.cpp:12:2: error: use of undeclared identifier 'printf'
+        printf("Name    :       %s\n", name);
+        ^
+../src/Employee.cpp:13:2: error: use of undeclared identifier 'printf'
+        printf("Empid   :       %d\n", empid);
+        ^
+../src/Employee.cpp:14:2: error: use of undeclared identifier 'printf'
+        printf("Salary  :       %f\n", salary);
+        ^
+9 errors generated.
+make: *** [src/Employee.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:20:52 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Employee.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Employee.d" -MT"src/Employee.o" -o "src/Employee.o" "../src/Employee.cpp"
+Finished building: ../src/Employee.cpp
+ 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:2:2: error: unknown type name 'Employee'
+        Employee emp;   //Here class Employee is instantiated and name of the instance is emp.
+        ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:21:16 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_3.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_3.5"  ./src/Employee.o ./src/Main.o   
+Finished building target: Day_3.5
+ 
+10:21:20 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+make: Nothing to be done for `all'.
+10:21:30 **** Incremental Build of configuration Debug for project Day_3.5 ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,9 @@
+int main(){
+ Employee emp1;
+emp1.acceptRecord(&emp1);
+emp1.PrintRecord(&emp1);
+}
+
+
+
+

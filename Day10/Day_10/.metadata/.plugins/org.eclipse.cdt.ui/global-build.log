@@ -1,0 +1,639 @@
+08:07:23 **** Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:07:32 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+make: Nothing to be done for `all'.
+08:13:54 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:24:5: error: 'num1' is a private member of 'Test'
+        t1.num1 = 10;
+           ^
+../include/Main.cpp:6:6: note: declared private here
+        int num1;                       //Non static data member / Instance variable
+            ^
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:14:11 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:25:5: error: 'num2' is a private member of 'Test'
+        t1.num2 = 20;
+           ^
+../include/Main.cpp:7:6: note: declared private here
+        int num2;                       //Non static data member / Instance variable
+            ^
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:15:03 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:26:11: error: 'num3' is a private member of 'Test'
+    Test::num3 = 30;
+          ^
+../include/Main.cpp:8:13: note: declared private here
+        static int num3;        //Static data member / Class level variable
+                   ^
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:18:50 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:18:58 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+make: Nothing to be done for `all'.
+08:22:40 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:22:50 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+make: Nothing to be done for `all'.
+08:29:19 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:36:8: error: call to non-static member function without an object argument
+        Test::setNum1( 10 );
+        ~~~~~~^~~~~~~
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:29:41 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:29:54 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:38:8: error: call to non-static member function without an object argument
+        Test::setNum2( 20 );
+        ~~~~~~^~~~~~~
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:30:32 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:30:55 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:31:04 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+make: Nothing to be done for `all'.
+08:37:41 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:25:3: error: invalid use of 'this' outside of a non-static member function
+                this->num1 = num3;
+                ^
+../include/Main.cpp:26:3: error: invalid use of 'this' outside of a non-static member function
+                this->num2 = num3;
+                ^
+2 errors generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:48:50 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:23:33: error: static member function cannot have 'const' qualifier
+        static void setNum3( int num3 )const{
+                                       ^~~~~
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:50:35 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:51:15 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:52:01 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:28:3: error: use of undeclared identifier 't1'
+                t1.setNum1( 10 );
+                ^
+../include/Main.cpp:29:3: error: use of undeclared identifier 't1'
+                t1.setNum2( 20 );
+                ^
+../include/Main.cpp:32:3: error: use of undeclared identifier 't1'
+                t1.printRecord( );
+                ^
+3 errors generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:52:20 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.1"  ./include/Main.o   
+Finished building target: Day_10.1
+ 
+08:52:32 **** Incremental Build of configuration Debug for project Day_10.1 ****
+make all 
+make: Nothing to be done for `all'.
+09:15:51 **** Build of configuration Debug for project Day_10.2 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.2"  ./include/Main.o   
+Finished building target: Day_10.2
+ 
+09:16:16 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.2"  ./include/Main.o   
+Finished building target: Day_10.2
+ 
+09:16:31 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.2"  ./include/Main.o   
+Finished building target: Day_10.2
+ 
+09:16:38 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+make: Nothing to be done for `all'.
+09:16:58 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:16:3: error: use of undeclared identifier 'f1'; did you mean 'A::f1'?
+                f1( );
+                ^~
+                A::f1
+../include/Main.cpp:6:14: note: 'A::f1' declared here
+        static void f1( void ){
+                    ^
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:17:10 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.2"  ./include/Main.o   
+Finished building target: Day_10.2
+ 
+09:17:23 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.2"  ./include/Main.o   
+Finished building target: Day_10.2
+ 
+09:17:32 **** Incremental Build of configuration Debug for project Day_10.2 ****
+make all 
+make: Nothing to be done for `all'.
+09:18:45 **** Build of configuration Debug for project Day_10.3 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:8:13: error: C++ requires a type specifier for all declarations
+const Math::PI = 3.14;
+~~~~~       ^
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:18:53 **** Incremental Build of configuration Debug for project Day_10.3 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.3"  ./include/Main.o   
+Finished building target: Day_10.3
+ 
+09:21:17 **** Incremental Build of configuration Debug for project Day_10.3 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.3"  ./include/Main.o   
+Finished building target: Day_10.3
+ 
+09:21:26 **** Incremental Build of configuration Debug for project Day_10.3 ****
+make all 
+make: Nothing to be done for `all'.
+09:21:54 **** Incremental Build of configuration Debug for project Day_10.3 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.3"  ./include/Main.o   
+Finished building target: Day_10.3
+ 
+09:22:03 **** Incremental Build of configuration Debug for project Day_10.3 ****
+make all 
+make: Nothing to be done for `all'.
+09:28:49 **** Build of configuration Debug for project Day_10.4 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.4"  ./include/Main.o   
+Finished building target: Day_10.4
+ 
+09:28:58 **** Incremental Build of configuration Debug for project Day_10.4 ****
+make all 
+make: Nothing to be done for `all'.
+09:29:39 **** Incremental Build of configuration Debug for project Day_10.4 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.4"  ./include/Main.o   
+Finished building target: Day_10.4
+ 
+09:29:48 **** Incremental Build of configuration Debug for project Day_10.4 ****
+make all 
+make: Nothing to be done for `all'.
+09:30:02 **** Incremental Build of configuration Debug for project Day_10.4 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.4"  ./include/Main.o   
+Finished building target: Day_10.4
+ 
+09:30:12 **** Incremental Build of configuration Debug for project Day_10.4 ****
+make all 
+make: Nothing to be done for `all'.
+09:30:20 **** Incremental Build of configuration Debug for project Day_10.4 ****
+make all 
+make: Nothing to be done for `all'.
+09:33:10 **** Build of configuration Debug for project Day_10.5 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.5"  ./include/Main.o   
+Finished building target: Day_10.5
+ 
+09:33:54 **** Incremental Build of configuration Debug for project Day_10.5 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.5"  ./include/Main.o   
+Finished building target: Day_10.5
+ 
+10:07:04 **** Build of configuration Debug for project Day_10.6 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:27:10: error: invalid operands to binary expression ('Complex' and 'Complex')
+        c3 = c1 + c2;
+             ~~ ^ ~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:278:21: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'Complex'
+__wrap_iter<_Iter1> operator+(typename __wrap_iter<_Iter1>::difference_type __n, __wrap_iter<_Iter1> __x) _NOEXCEPT
+                    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:172:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'Complex'
+operator+(typename move_iterator<_Iter>::difference_type __n, const move_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:221:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'Complex'
+operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_iterator<_Iter>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4274:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Complex'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4287:1: note: candidate template ignored: could not match 'const _CharT *' against 'Complex'
+operator+(const _CharT* __lhs , const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4299:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Complex'
+operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4311:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Complex'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4323:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Complex'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, _CharT __rhs)
+^
+1 error generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:07:48 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:27:5: error: 'real' is a private member of 'Complex'
+        c3.real = c1.real + c2.real;    //error: invalid operands to binary expression ('Complex' and 'Complex')
+           ^
+../include/Main.cpp:6:6: note: declared private here
+        int real;
+            ^
+../include/Main.cpp:27:15: error: 'real' is a private member of 'Complex'
+        c3.real = c1.real + c2.real;    //error: invalid operands to binary expression ('Complex' and 'Complex')
+                     ^
+../include/Main.cpp:6:6: note: declared private here
+        int real;
+            ^
+../include/Main.cpp:27:25: error: 'real' is a private member of 'Complex'
+        c3.real = c1.real + c2.real;    //error: invalid operands to binary expression ('Complex' and 'Complex')
+                               ^
+../include/Main.cpp:6:6: note: declared private here
+        int real;
+            ^
+3 errors generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:13:17 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.6"  ./include/Main.o   
+Finished building target: Day_10.6
+ 
+10:13:32 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.6"  ./include/Main.o   
+Finished building target: Day_10.6
+ 
+10:13:44 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:18:26 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.6"  ./include/Main.o   
+Finished building target: Day_10.6
+ 
+10:18:28 **** Build of configuration Debug for project Day_10.7 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.7"  ./include/Main.o   
+Finished building target: Day_10.7
+ 
+10:18:36 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:20:04 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.6"  ./include/Main.o   
+Finished building target: Day_10.6
+ 
+10:20:06 **** Incremental Build of configuration Debug for project Day_10.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:20:13 **** Incremental Build of configuration Debug for project Day_10.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:22:34 **** Build of configuration Debug for project Day_10.8 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+../include/Main.cpp:24:9: error: 'real' is a private member of 'Complex'
+        result.real = c1.real + c2.real;
+               ^
+../include/Main.cpp:6:6: note: declared private here
+        int real;
+            ^
+../include/Main.cpp:24:19: error: 'real' is a private member of 'Complex'
+        result.real = c1.real + c2.real;
+                         ^
+../include/Main.cpp:6:6: note: declared private here
+        int real;
+            ^
+../include/Main.cpp:24:29: error: 'real' is a private member of 'Complex'
+        result.real = c1.real + c2.real;
+                                   ^
+../include/Main.cpp:6:6: note: declared private here
+        int real;
+            ^
+../include/Main.cpp:25:9: error: 'imag' is a private member of 'Complex'
+        result.imag = c1.imag + c2.imag;
+               ^
+../include/Main.cpp:7:6: note: declared private here
+        int imag;
+            ^
+../include/Main.cpp:25:19: error: 'imag' is a private member of 'Complex'
+        result.imag = c1.imag + c2.imag;
+                         ^
+../include/Main.cpp:7:6: note: declared private here
+        int imag;
+            ^
+../include/Main.cpp:25:29: error: 'imag' is a private member of 'Complex'
+        result.imag = c1.imag + c2.imag;
+                                   ^
+../include/Main.cpp:7:6: note: declared private here
+        int imag;
+            ^
+6 errors generated.
+make: *** [include/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:22:58 **** Incremental Build of configuration Debug for project Day_10.8 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.8"  ./include/Main.o   
+Finished building target: Day_10.8
+ 
+10:23:13 **** Incremental Build of configuration Debug for project Day_10.8 ****
+make all 
+make: Nothing to be done for `all'.
+10:25:04 **** Incremental Build of configuration Debug for project Day_10.8 ****
+make all 
+Building file: ../include/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"include/Main.d" -MT"include/Main.o" -o "include/Main.o" "../include/Main.cpp"
+Finished building: ../include/Main.cpp
+ 
+Building target: Day_10.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_10.8"  ./include/Main.o   
+Finished building target: Day_10.8
+ 

@@ -1,0 +1,55 @@
+#include<iostream>
+using namespace std;
+class Date{
+	int day;
+	int month;
+	int year;
+
+public:
+	void acceptRecord(){
+		cout<<"Enter date:  ";
+		cin>>day;
+		cout<<"Enter month:  ";
+		cin>>month;
+		cout<<"Enter year:  ";
+		cin>>year;
+	}
+	void printRecord(){
+	  cout<<"Day:  "<<day<<"/"<<month<<"/"<<year<<endl;
+	}
+	bool validatedate(){
+		if( day<1 || day>31 || month<0 || month>12 || year < 0){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+	void addDays( ){
+
+	}
+
+
+};
+
+int main(){
+	Date d1;
+	d1.acceptRecord();
+	d1.printRecord();
+	d1.addDays();
+	int daysToAdd;
+	int fine = d1.validatedate();
+	if(fine==1){
+		cout<<"All is okay"<<endl;
+	}else{
+		cerr<<"Invalid Date"<<endl;
+	}
+	cout<<"Enter Number of days You want to add: ";
+	cin>>daysToadd;
+
+  return 0;
+
+}
+
+
+

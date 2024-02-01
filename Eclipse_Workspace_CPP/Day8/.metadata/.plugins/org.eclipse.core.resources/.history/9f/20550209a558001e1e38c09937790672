@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main() {
+//int []ptr1 = new int;  //Error
+//cout<<ptr1<<endl;
+	int *ptr = new int; //garbage value;
+	cout << *ptr << endl;
+
+	int *ptr1 = new int();  //0
+	cout<<*ptr1<<endl;
+
+	int *ptr2 = new int(123);  //123
+	cout<<*ptr2<<endl;
+
+
+	return 0;
+}
+

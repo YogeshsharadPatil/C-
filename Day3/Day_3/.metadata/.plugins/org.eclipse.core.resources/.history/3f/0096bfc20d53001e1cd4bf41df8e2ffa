@@ -1,0 +1,10 @@
+#include<cstdio>
+
+namespace na{
+	int num1 = 10;
+}
+namespace nb = na;
+int main( void ){
+
+	return 0;
+}

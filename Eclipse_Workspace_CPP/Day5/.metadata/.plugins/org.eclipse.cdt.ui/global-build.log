@@ -1,0 +1,9 @@
+14:05:43 **** Rebuild of configuration Debug for project Day5.4Complexp1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:29:17: warning: variable 'c5' set but not used [-Wunused-but-set-variable]
+   29 |         Complex c5 = 40;  // c5(40); int real
+      |                 ^~
+g++ -o Day5.4Complexp1.exe "src\\Main.o" 
+Info: Nothing to build for Day5.4Complexp1

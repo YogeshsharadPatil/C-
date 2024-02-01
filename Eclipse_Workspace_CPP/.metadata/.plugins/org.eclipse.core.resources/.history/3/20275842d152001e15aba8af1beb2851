@@ -1,0 +1,18 @@
+#include"../include/Employee.h";
+void acceptrecord(Employee *obj){
+	printf("Name	:	");
+	fflush(stdout);
+	scanf("%s", obj->name );
+	printf("Empid	:	");
+	fflush(stdout);
+	scanf("%d", &obj->empid );
+	printf("Salary	:	");
+	fflush(stdout);
+	scanf("%f", &obj->salary );
+}
+void printRecord(Employee *obj)
+{
+
+}
+
+

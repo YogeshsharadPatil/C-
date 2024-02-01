@@ -1,0 +1,27 @@
+#include<cstdio>
+
+namespace na{
+	int num1 = 10;
+}
+using namespace na;
+namespace nb{
+	void show_record( ){
+		printf("Num1	:	%d\n", num1);
+	}
+	void print_record( ){
+
+		printf("Num1	:	%d\n", num1);
+	}
+	void display_record( ){
+
+		printf("Num1	:	%d\n", num1);
+	}
+}
+int main( void ){
+	nb::show_record( );
+
+	nb::print_record( );
+
+	nb::display_record( );
+	return 0;
+}

@@ -1,0 +1,482 @@
+09:55:41 **** Clean-only build of configuration Debug for project Day_9.3 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_9.2
+ 
+09:57:25 **** Build of configuration Debug for project Day_9.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:17:25: error: 'num1' is a private member of 'Test'
+        cout << "Num1   :       " << t.num1 << endl;
+                                       ^
+../src/Main.cpp:6:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:18:25: error: 'num2' is a protected member of 'Test'
+        cout << "Num2   :       " << t.num2 << endl;
+                                       ^
+../src/Main.cpp:8:6: note: declared protected here
+        int num2;
+            ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:58:40 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.3"  ./src/Main.o   
+Finished building target: Day_9.3
+ 
+09:58:50 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+make: Nothing to be done for `all'.
+10:01:18 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:17:2: error: 'friend' used outside of class
+        friend Test t;
+        ^
+../src/Main.cpp:18:25: error: 'num1' is a private member of 'Test'
+        cout << "Num1   :       " << t.num1 << endl;
+                                       ^
+../src/Main.cpp:6:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:19:25: error: 'num2' is a protected member of 'Test'
+        cout << "Num2   :       " << t.num2 << endl;
+                                       ^
+../src/Main.cpp:8:6: note: declared protected here
+        int num2;
+            ^
+3 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:02:28 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.3"  ./src/Main.o   
+Finished building target: Day_9.3
+ 
+10:02:37 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+make: Nothing to be done for `all'.
+10:02:43 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.3"  ./src/Main.o   
+Finished building target: Day_9.3
+ 
+10:02:52 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+make: Nothing to be done for `all'.
+10:03:00 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.3"  ./src/Main.o   
+Finished building target: Day_9.3
+ 
+10:03:09 **** Incremental Build of configuration Debug for project Day_9.3 ****
+make all 
+make: Nothing to be done for `all'.
+10:05:30 **** Build of configuration Debug for project Day_9.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:17:25: error: 'num1' is a private member of 'Test'
+        cout << "Num1   :       " << t.num1 << endl;
+                                       ^
+../src/Main.cpp:6:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:18:25: error: 'num2' is a protected member of 'Test'
+        cout << "Num2   :       " << t.num2 << endl;
+                                       ^
+../src/Main.cpp:8:6: note: declared protected here
+        int num2;
+            ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:05:44 **** Incremental Build of configuration Debug for project Day_9.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.4"  ./src/Main.o   
+Finished building target: Day_9.4
+ 
+10:06:01 **** Incremental Build of configuration Debug for project Day_9.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:23:4: error: no member named 'print' in 'Test'
+        t.print( );
+        ~ ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:06:22 **** Incremental Build of configuration Debug for project Day_9.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.4"  ./src/Main.o   
+Finished building target: Day_9.4
+ 
+10:06:30 **** Incremental Build of configuration Debug for project Day_9.4 ****
+make all 
+make: Nothing to be done for `all'.
+10:08:53 **** Build of configuration Debug for project Day_9.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:22:25: error: 'num1' is a private member of 'A'
+        cout << "Num1   :       " << a.num1 << endl;
+                                       ^
+../src/Main.cpp:6:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:24:25: error: 'num2' is a private member of 'B'
+        cout << "Num2   :       " << b.num2 << endl;
+                                       ^
+../src/Main.cpp:14:6: note: declared private here
+        int num2;
+            ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:09:20 **** Incremental Build of configuration Debug for project Day_9.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.5"  ./src/Main.o   
+Finished building target: Day_9.5
+ 
+10:09:32 **** Incremental Build of configuration Debug for project Day_9.5 ****
+make all 
+make: Nothing to be done for `all'.
+10:11:31 **** Build of configuration Debug for project Day_9.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.6"  ./src/Main.o   
+Finished building target: Day_9.6
+ 
+10:13:30 **** Incremental Build of configuration Debug for project Day_9.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:21:19: error: 'num1' is a private member of 'B'
+        int result = obj.num1 + obj.num2;
+                         ^
+../src/Main.cpp:10:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:21:30: error: 'num2' is a private member of 'B'
+        int result = obj.num1 + obj.num2;
+                                    ^
+../src/Main.cpp:11:6: note: declared private here
+        int num2;
+            ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:13:43 **** Incremental Build of configuration Debug for project Day_9.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.6"  ./src/Main.o   
+Finished building target: Day_9.6
+ 
+10:13:52 **** Incremental Build of configuration Debug for project Day_9.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:16:00 **** Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:29:19: error: 'num1' is a private member of 'B'
+        int result = obj.num1 - obj.num2;
+                         ^
+../src/Main.cpp:12:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:29:30: error: 'num2' is a private member of 'B'
+        int result = obj.num1 - obj.num2;
+                                    ^
+../src/Main.cpp:13:6: note: declared private here
+        int num2;
+            ^
+../src/Main.cpp:32:1: error: extraneous closing brace ('}')
+}
+^
+../src/Main.cpp:33:23: error: function cannot return function type 'void ()'
+void A::multiplication()( void ){
+                      ^
+4 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:16:12 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:33:1: error: extraneous closing brace ('}')
+}
+^
+../src/Main.cpp:34:23: error: function cannot return function type 'void ()'
+void A::multiplication()( void ){
+                      ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:16:19 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:33:23: error: function cannot return function type 'void ()'
+void A::multiplication()( void ){
+                      ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:16:33 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.7"  ./src/Main.o   
+Finished building target: Day_9.7
+ 
+10:16:47 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:35:19: error: 'num1' is a private member of 'B'
+        int result = obj.num1 * obj.num2;
+                         ^
+../src/Main.cpp:12:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:35:30: error: 'num2' is a private member of 'B'
+        int result = obj.num1 * obj.num2;
+                                    ^
+../src/Main.cpp:13:6: note: declared private here
+        int num2;
+            ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:16:57 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.7"  ./src/Main.o   
+Finished building target: Day_9.7
+ 
+10:17:07 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:17:18 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.7"  ./src/Main.o   
+Finished building target: Day_9.7
+ 
+10:17:28 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:18:14 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.7"  ./src/Main.o   
+Finished building target: Day_9.7
+ 
+10:18:25 **** Incremental Build of configuration Debug for project Day_9.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:21:33 **** Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:14:6: error: 'num1' is a private member of 'B'
+        obj.num1 = 100;
+            ^
+../src/Main.cpp:10:6: note: declared private here
+        int num1;
+            ^
+../src/Main.cpp:15:27: error: 'num1' is a private member of 'B'
+        cout << "Num1   :       " << obj.num1 <<endl;
+                                         ^
+../src/Main.cpp:10:6: note: declared private here
+        int num1;
+            ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:22:23 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.8"  ./src/Main.o   
+Finished building target: Day_9.8
+ 
+10:23:40 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:29:27: error: 'num2' is a private member of 'A'
+        cout << "Num2   :       " << obj.num2 <<endl;
+                                         ^
+../src/Main.cpp:6:6: note: declared private here
+        int num2;
+            ^
+../src/Main.cpp:36:18: error: expected expression
+        b.displayRecord(;)
+                        ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:59 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:29:27: error: 'num2' is a private member of 'A'
+        cout << "Num2   :       " << obj.num2 <<endl;
+                                         ^
+../src/Main.cpp:6:6: note: declared private here
+        int num2;
+            ^
+../src/Main.cpp:36:20: error: expected ';' after expression
+        b.displayRecord( )
+                          ^
+                          ;
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:24:31 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:37:20: error: expected ';' after expression
+        b.displayRecord( )
+                          ^
+                          ;
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:24:38 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.8"  ./src/Main.o   
+Finished building target: Day_9.8
+ 
+10:25:21 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_9.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_9.8"  ./src/Main.o   
+Finished building target: Day_9.8
+ 
+10:25:34 **** Incremental Build of configuration Debug for project Day_9.8 ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+class Book{
+private:
+	string name;
+	int price;
+	int pagescount;
+public:
+	Book(){
+		this->name = "BookName";
+		this->price = 1;
+		this->pagescount = 0;
+	}
+
+	void acceptRecord(){
+		cout<<"Enter Book name: ";
+		cin>>this->name;
+		cout<<"Price: ";
+		cin>>this->price;
+		cout<<"Page count: ";
+		cin>>this->pagescount;
+	}
+	void printRecord(){
+		cout<<"Book Name"<<this->name<<endl;
+		cout<<"Book price "<<this->price<<endl;
+		cout<<"Book pagecount"<<this->pagescount<<endl;
+	}
+};
+class Tape{
+private:
+	string name;
+	int price;
+	int playTime;
+
+public:
+	Tape(){
+		this->name = "TapeName";
+		this->price = 1;
+		this->playTime = 0;
+	}
+
+	void acceptRecord(){
+		cout<<"Enter Tape name: ";
+		cin>>this->name;
+		cout<<"Price: ";
+		cin>>this->price;
+		cout<<"Play Time : ";
+		cin>>this->playTime;
+	}
+	void printRecord(){
+		cout<<"Tape Name"<<this->name<<endl;
+		cout<<" price "<<this->price<<endl;
+		cout<<"Book pagecount"<<this->playTime<<endl;
+	}
+
+};
+int main(){
+
+
+	return 0;
+}

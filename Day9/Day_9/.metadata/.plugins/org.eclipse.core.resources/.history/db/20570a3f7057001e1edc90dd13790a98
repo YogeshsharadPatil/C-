@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+	void sum( void );
+};
+void A::sum( void ){
+
+}
+int main( void ){
+	A a;
+	a.sum( );
+	return 0;
+}
+

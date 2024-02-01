@@ -1,0 +1,8 @@
+#include<cstdio>
+int num1= 10; //global variable
+int main(){
+ int num1 = 20; // Local variable
+ printf("Num :  %d\n",)
+
+
+}

@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class Date{
+	int date;
+	int month;
+	int year;
+
+public:
+	void acceptRecord(){
+		cout<<"Enter date:  ";
+		cin>>date;
+		cout<<"Enter month:  ";
+		cin>>month;
+		cout<<"Enter year:  ";
+		cin>>year;
+	}
+	void printRecord(){
+	  cout<<"Day:  "<<date<<"/"<<month<<"/"<<year<<endl;
+	}
+	bool validatedate(){
+		if(day<1||day>=31||month<0||month>12||){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+
+};
+
+int main(){
+	Date d1;
+	d1.acceptRecord();
+	d1.printRecord();
+  return 0;
+
+}
+
+
+

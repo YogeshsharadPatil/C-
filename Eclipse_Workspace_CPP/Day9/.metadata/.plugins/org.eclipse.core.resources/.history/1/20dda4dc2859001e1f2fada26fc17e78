@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+class Array{
+private:
+	int size;
+	int *arr;
+public:
+	Array(){
+		this->size = 0;
+		this->arr = nullptr;
+	}
+};
+int main(){
+
+}

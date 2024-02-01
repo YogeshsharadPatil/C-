@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Test{
+public:
+	int num1;
+	int num2;
+};
+int main( void ){
+	Test t1;
+
+	Test *const ptr1 = &t1;
+	ptr1->num1 = 10;
+	ptr1->num2 = 20;
+
+	cout << "Num1	:	" << ptr1->num1 << endl;
+	cout << "Num2	:	" << ptr1->num2 << endl;
+	return 0;
+}
+int main1( void ){
+	int num1 = 10;
+	int *const ptr1 = &num1;
+	*ptr1 = 50;	//OK
+	cout << "Num1	:	" << num1 << endl;
+	cout << "Num1	:	" << *ptr1 << endl;	//OK
+
+	const int num2 = 20;
+	const int *const ptr2 = & num2;
+	//*ptr2 = 60;	//Not OK
+	cout << "Num2	:	" << num2 << endl;
+	cout << "Num2	:	" << *ptr2 << endl;	//OK
+	return 0;
+}

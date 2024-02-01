@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+
+int main( void ){
+	const int number = 10;
+	//number = number + 1;	// Not OK
+	cout << "Number	:	" << number <<endl;
+	return 0;
+}

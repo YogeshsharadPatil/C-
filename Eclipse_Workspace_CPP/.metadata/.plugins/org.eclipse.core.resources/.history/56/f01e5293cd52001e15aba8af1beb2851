@@ -1,0 +1,25 @@
+#include"../include/Employee.h"
+#include<cstdio>
+void Employee::acceptRecord(Employee obj){
+
+	printf("ID  :   ");
+	fflush(stdout);
+	scanf("%d",&empid);
+	printf("Name :  ");
+	fflush(stdout);
+	scanf("%d, name");
+	printf("Salary  :   \n");
+	fflush(stdout);
+	scanf("%f",&salary);
+
+}
+void Employee:: printRecord(Employee obj){
+
+	printf("Emp_ID  :   ",obj.empid);
+	printf("Emp_Name  :   ",obj.name);
+	printf("Salary  :   ",obj.salary);
+
+}
+
+
+

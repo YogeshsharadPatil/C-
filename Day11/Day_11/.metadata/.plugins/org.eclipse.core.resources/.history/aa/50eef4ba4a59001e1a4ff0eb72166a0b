@@ -1,0 +1,8 @@
+#include<iostream>
+using namespace std;
+int main( void ){
+	Complex c1;
+	c1.acceptRecord( );
+	c1.printRecord( );
+	return 0;
+}

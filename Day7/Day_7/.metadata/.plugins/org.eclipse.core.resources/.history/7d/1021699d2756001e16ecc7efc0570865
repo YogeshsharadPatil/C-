@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+namespace nutil{
+	class Complex{
+	private:
+		int real;
+		int imag;
+	public:
+		Complex( int real = 0, int imag  = 0 ){
+			this->real = real;
+			this->imag = imag;
+		}
+
+	};
+}
+int main( void ){
+	using namespace nutil;
+	Complex c1;
+	c1.setReal( 10 );
+	return 0;
+}

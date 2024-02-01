@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+// We can declare static data member as a constatnt but
+//We can not declare static member function as constant
+//cause:-
+int main(){
+
+	return  0;
+}

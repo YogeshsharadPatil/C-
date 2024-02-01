@@ -1,0 +1,768 @@
+23:03:23 **** Rebuild of configuration Debug for project Day12.5Demogetter ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In constructor 'Book::Book()':
+..\src\Main.cpp:36:23: error: 'std::string Product::name' is private within this context
+   36 |                 this->name = "BookName";
+      |                       ^~~~
+..\src\Main.cpp:5:16: note: declared private here
+    5 |         string name;
+      |                ^~~~
+..\src\Main.cpp:37:23: error: 'int Product::price' is private within this context
+   37 |                 this->price = 1;
+      |                       ^~~~~
+..\src\Main.cpp:6:13: note: declared private here
+    6 |         int price;
+      |             ^~~~~
+..\src\Main.cpp:37:23: note: field 'int Product::price' can be accessed via 'int Product::getPrice()'
+   37 |                 this->price = 1;
+      |                       ^~~~~
+      |                       getPrice()
+..\src\Main.cpp: In member function 'virtual void Book::acceptRecord()':
+..\src\Main.cpp:43:38: error: 'std::string Product::name' is private within this context
+   43 |                 cin >> this->setname(name);
+      |                                      ^~~~
+..\src\Main.cpp:5:16: note: declared private here
+    5 |         string name;
+      |                ^~~~
+..\src\Main.cpp:43:21: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'void')
+   43 |                 cin >> this->setname(name);
+      |                 ~~~ ^~ ~~~~~~~~~~~~~~~~~~~
+      |                 |                   |
+      |                 |                   void
+      |                 std::istream {aka std::basic_istream<char>}
+In file included from C:/MinGW/include/c++/13.1.0/iostream:42,
+                 from ..\src\Main.cpp:1:
+C:/MinGW/include/c++/13.1.0/istream:325:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  325 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:325:25: note:   no known conversion for argument 1 from 'void' to 'void*&'
+  325 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:224:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  224 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:224:31: note:   no known conversion for argument 1 from 'void' to 'long double&'
+  224 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:220:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  220 |       operator>>(double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:220:26: note:   no known conversion for argument 1 from 'void' to 'double&'
+  220 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:216:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  216 |       operator>>(float& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:216:25: note:   no known conversion for argument 1 from 'void' to 'float&'
+  216 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:201:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  201 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:201:38: note:   no known conversion for argument 1 from 'void' to 'long long unsigned int&'
+  201 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:197:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  197 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:197:29: note:   no known conversion for argument 1 from 'void' to 'long long int&'
+  197 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:192:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  192 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:192:33: note:   no known conversion for argument 1 from 'void' to 'long unsigned int&'
+  192 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:188:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  188 |       operator>>(long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:188:24: note:   no known conversion for argument 1 from 'void' to 'long int&'
+  188 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:184:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  184 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:184:32: note:   no known conversion for argument 1 from 'void' to 'unsigned int&'
+  184 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:181:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  181 |       operator>>(int& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:181:23: note:   no known conversion for argument 1 from 'void' to 'int&'
+  181 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:177:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  177 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:177:34: note:   no known conversion for argument 1 from 'void' to 'short unsigned int&'
+  177 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:174:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  174 |       operator>>(short& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:174:25: note:   no known conversion for argument 1 from 'void' to 'short int&'
+  174 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:170:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  170 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:170:24: note:   no known conversion for argument 1 from 'void' to 'bool&'
+  170 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:122:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__istream_type& (*)(__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:122:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>; __ios_type = std::basic_ios<char>]'
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:32: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:30: note:   no known conversion for argument 1 from 'void' to 'std::ios_base& (*)(std::ios_base&)'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  349 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  349 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from C:/MinGW/include/c++/13.1.0/string:55,
+                 from C:/MinGW/include/c++/13.1.0/bits/locale_classes.h:40,
+                 from C:/MinGW/include/c++/13.1.0/bits/ios_base.h:41,
+                 from C:/MinGW/include/c++/13.1.0/ios:44,
+                 from C:/MinGW/include/c++/13.1.0/ostream:40,
+                 from C:/MinGW/include/c++/13.1.0/iostream:41:
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+  823 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:42: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'void'
+   43 |                 cin >> this->setname(name);
+      |                                          ^
+In file included from C:/MinGW/include/c++/13.1.0/bits/memory_resource.h:38,
+                 from C:/MinGW/include/c++/13.1.0/string:58:
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note: candidate: 'template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator>>(byte, _IntegerType)'
+  130 |     operator>>(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:17: note:   cannot convert 'std::cin' (type 'std::istream' {aka 'std::basic_istream<char>'}) to type 'std::byte'
+   43 |                 cin >> this->setname(name);
+      |                 ^~~
+In file included from C:/MinGW/include/c++/13.1.0/istream:1106:
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT&)'
+  975 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:42: note:   deduced conflicting types for parameter '_CharT' ('char' and 'void')
+   43 |                 cin >> this->setname(name);
+      |                                          ^
+C:/MinGW/include/c++/13.1.0/istream:846:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char&)'
+  846 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:846:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:37: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Book*)this)->Book::<anonymous>.Product::name))' (type 'void') to type 'unsigned char&'
+   43 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char&)'
+  851 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:37: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Book*)this)->Book::<anonymous>.Product::name))' (type 'void') to type 'signed char&'
+   43 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT*)'
+  893 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:42: note:   mismatched types '_CharT*' and 'void'
+   43 |                 cin >> this->setname(name);
+      |                                          ^
+C:/MinGW/include/c++/13.1.0/istream:936:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char*)'
+  936 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:936:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:37: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Book*)this)->Book::<anonymous>.Product::name))' (type 'void') to type 'unsigned char*'
+   43 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char*)'
+  942 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:43:37: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Book*)this)->Book::<anonymous>.Product::name))' (type 'void') to type 'signed char*'
+   43 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+ 1096 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note:   template argument deduction/substitution failed:
+C:/MinGW/include/c++/13.1.0/istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = void]':
+..\src\Main.cpp:43:28:   required from here
+C:/MinGW/include/c++/13.1.0/istream:1096:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\src\Main.cpp:45:39: error: 'int Product::price' is private within this context
+   45 |                 cin >> this->setprice(price);
+      |                                       ^~~~~
+..\src\Main.cpp:6:13: note: declared private here
+    6 |         int price;
+      |             ^~~~~
+..\src\Main.cpp:45:21: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'void')
+   45 |                 cin >> this->setprice(price);
+      |                 ~~~ ^~ ~~~~~~~~~~~~~~~~~~~~~
+      |                 |                    |
+      |                 |                    void
+      |                 std::istream {aka std::basic_istream<char>}
+C:/MinGW/include/c++/13.1.0/istream:325:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  325 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:325:25: note:   no known conversion for argument 1 from 'void' to 'void*&'
+  325 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:224:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  224 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:224:31: note:   no known conversion for argument 1 from 'void' to 'long double&'
+  224 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:220:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  220 |       operator>>(double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:220:26: note:   no known conversion for argument 1 from 'void' to 'double&'
+  220 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:216:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  216 |       operator>>(float& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:216:25: note:   no known conversion for argument 1 from 'void' to 'float&'
+  216 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:201:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  201 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:201:38: note:   no known conversion for argument 1 from 'void' to 'long long unsigned int&'
+  201 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:197:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  197 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:197:29: note:   no known conversion for argument 1 from 'void' to 'long long int&'
+  197 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:192:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  192 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:192:33: note:   no known conversion for argument 1 from 'void' to 'long unsigned int&'
+  192 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:188:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  188 |       operator>>(long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:188:24: note:   no known conversion for argument 1 from 'void' to 'long int&'
+  188 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:184:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  184 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:184:32: note:   no known conversion for argument 1 from 'void' to 'unsigned int&'
+  184 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:181:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  181 |       operator>>(int& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:181:23: note:   no known conversion for argument 1 from 'void' to 'int&'
+  181 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:177:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  177 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:177:34: note:   no known conversion for argument 1 from 'void' to 'short unsigned int&'
+  177 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:174:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  174 |       operator>>(short& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:174:25: note:   no known conversion for argument 1 from 'void' to 'short int&'
+  174 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:170:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  170 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:170:24: note:   no known conversion for argument 1 from 'void' to 'bool&'
+  170 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:122:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__istream_type& (*)(__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:122:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>; __ios_type = std::basic_ios<char>]'
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:32: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:30: note:   no known conversion for argument 1 from 'void' to 'std::ios_base& (*)(std::ios_base&)'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  349 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  349 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+  823 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:44: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'void'
+   45 |                 cin >> this->setprice(price);
+      |                                            ^
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note: candidate: 'template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator>>(byte, _IntegerType)'
+  130 |     operator>>(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:17: note:   cannot convert 'std::cin' (type 'std::istream' {aka 'std::basic_istream<char>'}) to type 'std::byte'
+   45 |                 cin >> this->setprice(price);
+      |                 ^~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT&)'
+  975 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:44: note:   deduced conflicting types for parameter '_CharT' ('char' and 'void')
+   45 |                 cin >> this->setprice(price);
+      |                                            ^
+C:/MinGW/include/c++/13.1.0/istream:846:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char&)'
+  846 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:846:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:38: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setprice(((Book*)this)->Book::<anonymous>.Product::price)' (type 'void') to type 'unsigned char&'
+   45 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char&)'
+  851 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:38: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setprice(((Book*)this)->Book::<anonymous>.Product::price)' (type 'void') to type 'signed char&'
+   45 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT*)'
+  893 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:44: note:   mismatched types '_CharT*' and 'void'
+   45 |                 cin >> this->setprice(price);
+      |                                            ^
+C:/MinGW/include/c++/13.1.0/istream:936:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char*)'
+  936 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:936:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:38: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setprice(((Book*)this)->Book::<anonymous>.Product::price)' (type 'void') to type 'unsigned char*'
+   45 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char*)'
+  942 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:45:38: note:   cannot convert '((Book*)this)->Book::<anonymous>.Product::setprice(((Book*)this)->Book::<anonymous>.Product::price)' (type 'void') to type 'signed char*'
+   45 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+ 1096 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note:   template argument deduction/substitution failed:
+C:/MinGW/include/c++/13.1.0/istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = void]':
+..\src\Main.cpp:45:30:   required from here
+C:/MinGW/include/c++/13.1.0/istream:1096:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\src\Main.cpp: In constructor 'Tape::Tape()':
+..\src\Main.cpp:61:23: error: 'std::string Product::name' is private within this context
+   61 |                 this->name = "TapeName";
+      |                       ^~~~
+..\src\Main.cpp:5:16: note: declared private here
+    5 |         string name;
+      |                ^~~~
+..\src\Main.cpp:62:23: error: 'int Product::price' is private within this context
+   62 |                 this->price = 1;
+      |                       ^~~~~
+..\src\Main.cpp:6:13: note: declared private here
+    6 |         int price;
+      |             ^~~~~
+..\src\Main.cpp:62:23: note: field 'int Product::price' can be accessed via 'int Product::getPrice()'
+   62 |                 this->price = 1;
+      |                       ^~~~~
+      |                       getPrice()
+..\src\Main.cpp: In member function 'virtual void Tape::acceptRecord()':
+..\src\Main.cpp:68:38: error: 'std::string Product::name' is private within this context
+   68 |                 cin >> this->setname(name);
+      |                                      ^~~~
+..\src\Main.cpp:5:16: note: declared private here
+    5 |         string name;
+      |                ^~~~
+..\src\Main.cpp:68:21: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'void')
+   68 |                 cin >> this->setname(name);
+      |                 ~~~ ^~ ~~~~~~~~~~~~~~~~~~~
+      |                 |                   |
+      |                 |                   void
+      |                 std::istream {aka std::basic_istream<char>}
+C:/MinGW/include/c++/13.1.0/istream:325:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  325 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:325:25: note:   no known conversion for argument 1 from 'void' to 'void*&'
+  325 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:224:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  224 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:224:31: note:   no known conversion for argument 1 from 'void' to 'long double&'
+  224 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:220:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  220 |       operator>>(double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:220:26: note:   no known conversion for argument 1 from 'void' to 'double&'
+  220 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:216:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  216 |       operator>>(float& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:216:25: note:   no known conversion for argument 1 from 'void' to 'float&'
+  216 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:201:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  201 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:201:38: note:   no known conversion for argument 1 from 'void' to 'long long unsigned int&'
+  201 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:197:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  197 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:197:29: note:   no known conversion for argument 1 from 'void' to 'long long int&'
+  197 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:192:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  192 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:192:33: note:   no known conversion for argument 1 from 'void' to 'long unsigned int&'
+  192 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:188:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  188 |       operator>>(long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:188:24: note:   no known conversion for argument 1 from 'void' to 'long int&'
+  188 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:184:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  184 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:184:32: note:   no known conversion for argument 1 from 'void' to 'unsigned int&'
+  184 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:181:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  181 |       operator>>(int& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:181:23: note:   no known conversion for argument 1 from 'void' to 'int&'
+  181 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:177:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  177 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:177:34: note:   no known conversion for argument 1 from 'void' to 'short unsigned int&'
+  177 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:174:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  174 |       operator>>(short& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:174:25: note:   no known conversion for argument 1 from 'void' to 'short int&'
+  174 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:170:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  170 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:170:24: note:   no known conversion for argument 1 from 'void' to 'bool&'
+  170 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:122:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__istream_type& (*)(__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:122:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>; __ios_type = std::basic_ios<char>]'
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:32: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:30: note:   no known conversion for argument 1 from 'void' to 'std::ios_base& (*)(std::ios_base&)'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  349 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  349 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+  823 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:42: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'void'
+   68 |                 cin >> this->setname(name);
+      |                                          ^
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note: candidate: 'template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator>>(byte, _IntegerType)'
+  130 |     operator>>(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:17: note:   cannot convert 'std::cin' (type 'std::istream' {aka 'std::basic_istream<char>'}) to type 'std::byte'
+   68 |                 cin >> this->setname(name);
+      |                 ^~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT&)'
+  975 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:42: note:   deduced conflicting types for parameter '_CharT' ('char' and 'void')
+   68 |                 cin >> this->setname(name);
+      |                                          ^
+C:/MinGW/include/c++/13.1.0/istream:846:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char&)'
+  846 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:846:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:37: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Tape*)this)->Tape::<anonymous>.Product::name))' (type 'void') to type 'unsigned char&'
+   68 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char&)'
+  851 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:37: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Tape*)this)->Tape::<anonymous>.Product::name))' (type 'void') to type 'signed char&'
+   68 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT*)'
+  893 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:42: note:   mismatched types '_CharT*' and 'void'
+   68 |                 cin >> this->setname(name);
+      |                                          ^
+C:/MinGW/include/c++/13.1.0/istream:936:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char*)'
+  936 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:936:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:37: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Tape*)this)->Tape::<anonymous>.Product::name))' (type 'void') to type 'unsigned char*'
+   68 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char*)'
+  942 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:68:37: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setname(std::__cxx11::basic_string<char>(((Tape*)this)->Tape::<anonymous>.Product::name))' (type 'void') to type 'signed char*'
+   68 |                 cin >> this->setname(name);
+      |                        ~~~~~~~~~~~~~^~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+ 1096 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note:   template argument deduction/substitution failed:
+C:/MinGW/include/c++/13.1.0/istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = void]':
+..\src\Main.cpp:68:28:   required from here
+C:/MinGW/include/c++/13.1.0/istream:1096:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\src\Main.cpp:70:39: error: 'int Product::price' is private within this context
+   70 |                 cin >> this->setprice(price);
+      |                                       ^~~~~
+..\src\Main.cpp:6:13: note: declared private here
+    6 |         int price;
+      |             ^~~~~
+..\src\Main.cpp:70:21: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'void')
+   70 |                 cin >> this->setprice(price);
+      |                 ~~~ ^~ ~~~~~~~~~~~~~~~~~~~~~
+      |                 |                    |
+      |                 |                    void
+      |                 std::istream {aka std::basic_istream<char>}
+C:/MinGW/include/c++/13.1.0/istream:325:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  325 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:325:25: note:   no known conversion for argument 1 from 'void' to 'void*&'
+  325 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:224:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  224 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:224:31: note:   no known conversion for argument 1 from 'void' to 'long double&'
+  224 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:220:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  220 |       operator>>(double& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:220:26: note:   no known conversion for argument 1 from 'void' to 'double&'
+  220 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:216:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  216 |       operator>>(float& __f)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:216:25: note:   no known conversion for argument 1 from 'void' to 'float&'
+  216 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:201:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  201 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:201:38: note:   no known conversion for argument 1 from 'void' to 'long long unsigned int&'
+  201 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:197:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  197 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:197:29: note:   no known conversion for argument 1 from 'void' to 'long long int&'
+  197 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:192:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  192 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:192:33: note:   no known conversion for argument 1 from 'void' to 'long unsigned int&'
+  192 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:188:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  188 |       operator>>(long& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:188:24: note:   no known conversion for argument 1 from 'void' to 'long int&'
+  188 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:184:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  184 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:184:32: note:   no known conversion for argument 1 from 'void' to 'unsigned int&'
+  184 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:181:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  181 |       operator>>(int& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:181:23: note:   no known conversion for argument 1 from 'void' to 'int&'
+  181 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:177:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  177 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:177:34: note:   no known conversion for argument 1 from 'void' to 'short unsigned int&'
+  177 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:174:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  174 |       operator>>(short& __n);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:174:25: note:   no known conversion for argument 1 from 'void' to 'short int&'
+  174 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:170:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  170 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:170:24: note:   no known conversion for argument 1 from 'void' to 'bool&'
+  170 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+C:/MinGW/include/c++/13.1.0/istream:122:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__istream_type& (*)(__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:122:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  122 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>; __ios_type = std::basic_ios<char>]'
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:126:32: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  126 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __istream_type = std::basic_istream<char>]'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:133:30: note:   no known conversion for argument 1 from 'void' to 'std::ios_base& (*)(std::ios_base&)'
+  133 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  349 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:349:36: note:   no known conversion for argument 1 from 'void' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  349 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+  823 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/basic_string.tcc:823:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:44: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'void'
+   70 |                 cin >> this->setprice(price);
+      |                                            ^
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note: candidate: 'template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator>>(byte, _IntegerType)'
+  130 |     operator>>(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/cstddef:130:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:17: note:   cannot convert 'std::cin' (type 'std::istream' {aka 'std::basic_istream<char>'}) to type 'std::byte'
+   70 |                 cin >> this->setprice(price);
+      |                 ^~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT&)'
+  975 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/bits/istream.tcc:975:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:44: note:   deduced conflicting types for parameter '_CharT' ('char' and 'void')
+   70 |                 cin >> this->setprice(price);
+      |                                            ^
+C:/MinGW/include/c++/13.1.0/istream:846:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char&)'
+  846 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:846:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:38: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setprice(((Tape*)this)->Tape::<anonymous>.Product::price)' (type 'void') to type 'unsigned char&'
+   70 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char&)'
+  851 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:851:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:38: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setprice(((Tape*)this)->Tape::<anonymous>.Product::price)' (type 'void') to type 'signed char&'
+   70 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(basic_istream<_CharT, _Traits>&, _CharT*)'
+  893 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:893:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:44: note:   mismatched types '_CharT*' and 'void'
+   70 |                 cin >> this->setprice(price);
+      |                                            ^
+C:/MinGW/include/c++/13.1.0/istream:936:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, unsigned char*)'
+  936 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:936:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:38: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setprice(((Tape*)this)->Tape::<anonymous>.Product::price)' (type 'void') to type 'unsigned char*'
+   70 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(basic_istream<char, _Traits>&, signed char*)'
+  942 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:942:5: note:   template argument deduction/substitution failed:
+..\src\Main.cpp:70:38: note:   cannot convert '((Tape*)this)->Tape::<anonymous>.Product::setprice(((Tape*)this)->Tape::<anonymous>.Product::price)' (type 'void') to type 'signed char*'
+   70 |                 cin >> this->setprice(price);
+      |                        ~~~~~~~~~~~~~~^~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+ 1096 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+C:/MinGW/include/c++/13.1.0/istream:1096:5: note:   template argument deduction/substitution failed:
+C:/MinGW/include/c++/13.1.0/istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = void]':
+..\src\Main.cpp:70:30:   required from here
+C:/MinGW/include/c++/13.1.0/istream:1096:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:99:25: warning: deleting object of polymorphic class type 'Product' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+   99 |                         delete ptr;
+      |                         ^~~~~~~~~~
+..\src\Main.cpp:106:25: warning: deleting object of polymorphic class type 'Product' which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+  106 |                         delete ptr;
+      |                         ^~~~~~~~~~
+
+23:03:25 Build Failed. 16 errors, 2 warnings. (took 1s.955ms)
+

@@ -1,0 +1,42 @@
+#include<iostream>
+#include<iomanip>
+int main( void ){
+	int number;
+
+	std::cout << "Number	:	";
+	std::cin >> number;
+
+
+	return 0;
+}
+int main3( void ){
+	int num1 = 10;
+	int num2 = 20;
+	using namespace std;
+	//cout <<  num1 << num2 << endl;
+
+	/* cout <<  num1 << endl;
+	cout << num2 << endl; */
+
+	cout <<  "Num1	:	" << num1 << endl;
+	cout << "Num2	:	" << num2 << endl;
+
+	//cout << num1 << setw(5)<< num2 << endl;
+	return 0;
+}
+int main2( void ){
+	int number = 10;
+	//printf("%d", number);
+	//std::cout <<  number << std::endl;
+
+	using namespace std;
+	cout <<  number << endl;
+	return 0;
+}
+int main1( void ){
+	//std::cout << "Hello World" << std::endl;
+
+	using namespace std;
+	cout << "Hello World" << endl;
+	return 0;
+}

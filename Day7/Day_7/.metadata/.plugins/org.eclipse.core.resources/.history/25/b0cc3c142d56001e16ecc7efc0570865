@@ -1,0 +1,15 @@
+#ifndef ILLEGALARGUMENTEXCEPTION_
+#define ILLEGALARGUMENTEXCEPTION_
+
+namespace exception{
+	class IllegalArgumentException{
+	private:
+		const string message;
+	public:
+		IllegalArgumentException( string message = "Invalid argument" );
+
+		string getMessage( void )const;
+	};
+}
+
+#endif /* ILLEGALARGUMENTEXCEPTION_ */

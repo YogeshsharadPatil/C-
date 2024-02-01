@@ -1,0 +1,10 @@
+#include"../include/Employee.h"
+void Employee::acceptRecord(Employee){
+
+}
+void Employee:: printRecord(){
+
+}
+
+
+

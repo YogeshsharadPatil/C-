@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+class A{
+private:
+	int number;
+public:
+	A( void ){
+		this->number = 10;
+	}
+};
+class B : public A{
+public:
+	B( void ){
+
+	}
+	void printRecord( void ){
+		cout <<"Number	:	"<<this->number<<endl;
+	}
+};
+class C : public A{
+public:
+	C( void ){
+
+	}
+	void printRecord( void ){
+		cout <<"Number	:	"<<this->number<<endl;
+	}
+};
+int main( void ){
+	B b;
+	b.printRecord( );
+
+	C c;
+	c.printRecord( );
+	return 0;
+}
+

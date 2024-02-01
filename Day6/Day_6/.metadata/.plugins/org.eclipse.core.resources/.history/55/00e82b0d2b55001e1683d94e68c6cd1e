@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main( void ){
+	int num1 = 10;
+	int *const ptr1 = &num1;
+	*ptr1 = 50;	//OK
+	cout << "Num1	:	" << num1 << endl;
+	cout << "Num1	:	" << *ptr1 << endl;	//OK
+
+	const int num2 = 20;
+	const int *const ptr2 = & num2;
+	*ptr2 = 60;	//Not OK
+	cout << "Num2	:	" << num2 << endl;
+	cout << "Num2	:	" << *ptr2 << endl;	//OK
+	return 0;
+}

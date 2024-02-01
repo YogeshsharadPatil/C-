@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class Date{
+	int date;
+	int month;
+	int year;
+
+public:
+	void acceptRecord(){
+		cout<<"Enter date:  ";
+		cin>>date;
+		cout<<"Enter month:  ";
+		cin>>month;
+		cout<<"Enter year:  ";
+		cin>>year;
+	}
+	void printRecord(){
+	  cout<<"Day:  "<<date<<"/"<<month<<"/"<<year<<endl;
+	}
+	void validatedate();
+
+};
+
+int main(){
+
+  return 0;
+
+}
+
+
+

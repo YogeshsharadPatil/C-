@@ -1,0 +1,19 @@
+
+#ifndef EMPLOYEE_H_
+#define EMPLOYEE_H_
+
+class Employee{
+private:
+	int id;
+	char Name[];
+	float salary;
+
+public:
+	void acceptRecord(Employee obj);
+	void printRecord(Employee obj)
+};
+
+
+
+
+#endif /* EMPLOYEE_H_ */

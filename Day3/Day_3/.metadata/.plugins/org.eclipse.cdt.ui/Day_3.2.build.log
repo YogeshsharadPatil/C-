@@ -1,0 +1,15 @@
+08:39:10 **** Incremental Build of configuration Debug for project Day_3.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_3.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_3.2"  ./src/Main.o   
+Finished building target: Day_3.2
+ 
+
+08:39:11 Build Finished. 0 errors, 0 warnings. (took 889ms)
+

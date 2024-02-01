@@ -1,0 +1,17 @@
+#include<cstdio>
+
+int num1 = 10;
+//File Scope
+namespace na{
+	int num2 = 20;
+
+	//Namespace scope
+	namespace nb{	//Nested namespace
+		int num3 = 30;
+	}
+}
+
+int main( void ){
+
+	return 0;
+}

@@ -1,0 +1,10 @@
+
+class Employee : public Person{
+private:
+	int empid;
+	float salary;
+};
+int main( void ){
+	Employee emp( "Sandeep" , 40, 3778, 45000.50f );
+	return 0;
+}

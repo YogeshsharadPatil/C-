@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Day_7.14/include/IllegalArgumentException.h&apos; to &apos;IllegalArgumentException&apos;" description="Rename resource &apos;IllegalArgumentException.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/IllegalArgumentException.h" name="IllegalArgumentException" stamp="1695046178771" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Day_7.14/include/Complex.h&apos; to &apos;Complex&apos;" description="Rename resource &apos;Complex.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/Complex.h" name="Complex" stamp="1695046299644" updateReferences="true"/>
+</session>

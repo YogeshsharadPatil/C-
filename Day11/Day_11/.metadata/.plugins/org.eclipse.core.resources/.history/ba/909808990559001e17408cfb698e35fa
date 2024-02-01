@@ -1,0 +1,12 @@
+#include<iostream>
+#include<complex>
+using namespace std;
+
+int main( void ){
+	complex<double> c1;
+	c1.real( 10.5 );
+	c1.imag( 20.5 );
+	cout << "Real Number	:	" << c1.real() <<endl;
+	cout << "Imag Number	:	" << c1.imag() <<endl;
+	return 0;
+}

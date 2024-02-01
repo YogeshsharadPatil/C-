@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+void sum(int num1,int num2){
+   return num1 + num2;
+}
+int sub(int num1,int num2){
+       return num1 - num2;
+}
+int multiplication(int num1,int num2){
+	return num1 * num2;
+}
+int Division(int num1,int num2){
+	 return num1/num2;
+}
+int menu_List(){
+
+	cout<<"1.Summation : "<<endl;
+	cout<<"2.Subtraction:"<<endl;
+	cout<<"3.Multiplication.: "<<endl;
+	cout<<"4.Division : "<<endl;
+	cout<<"0.Exit : "<<endl;
+	int choice;
+   cout<<"Enter your choice: "<<endl;
+   cin>>choice;
+   return choice;
+   }
+int main(){
+  int n1;
+  int n2;
+  cout<<"Enter number1: "<<endl;
+  cin>>n1;
+  cout<<"Enter Number2: "<<endl;
+  cin>>n2;
+  menu_List();
+
+  while(int rchoice=::menu_List() !=0){
+  switch(rchoice){
+
+
+  }
+  }
+}

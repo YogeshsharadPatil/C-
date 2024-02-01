@@ -1,0 +1,23 @@
+#ifndef ARITHMETICEXCEPTION_
+#define ARITHMETICEXCEPTION_
+
+class ArithmeticException{
+private:
+  const string message;
+  const int lineNumber;
+  const string functionName;
+  const string fileName;
+public:
+  ArithmeticException( string message, int lineNumber, string functionName, string fileName );
+
+  string getMessage( void )const;
+
+  int getLineNumber( void )const;
+
+  string getFunctionName( void )const;
+
+  string getFileName( void )const;
+
+};
+
+#endif /* ARITHMETICEXCEPTION_ */

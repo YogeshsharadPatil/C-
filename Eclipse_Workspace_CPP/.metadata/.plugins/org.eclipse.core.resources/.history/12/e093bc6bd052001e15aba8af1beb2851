@@ -1,0 +1,7 @@
+
+void Employee::acceptrecord(Employee *obj){
+
+}
+
+
+

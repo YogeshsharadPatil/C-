@@ -1,0 +1,7 @@
+#include"../include/Employee.h";
+void acceptrecord(Employee *obj){
+
+}
+
+
+

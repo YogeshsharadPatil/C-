@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+class Student{
+		char name[50];
+		int rollNumber;
+		int marks;
+		char grade;
+public:
+		Student(){
+			strcpy(this->name,"");
+			this->rollNumber = 1;
+			this->marks = 100;
+			this->grade = 'A';
+		}
+
+		void setName(const char *name){   //if u write other than name as paramter there is no need of this pointer
+			strcpy(this->name,name);		}
+
+		void setrollNumber(int rollnumber){ //paramter name different so no need of this pointer
+				rollNumber=rollnumber;
+			}
+		void setMarks(int marks){
+			this->marks = marks;
+		}
+		void setGrade(int grade){
+				this->grade = grade ;
+		}
+		char calculateGrade();
+		void acceptRecord();
+		void displayRecord();
+};
+void Student :: acceptRecord(){
+   cout<<"Enter Your name:  ";
+    char *name = cin>>this->name;
+    Student::setName(name);
+    cout<<"Enter Your RollNumber:  ";
+       char *name = cin>>this->name;
+      Student::setrollNumber(name);
+       cout<<"Enter Your name";
+          char *name = cin>>this->name;
+          Student::setName(name);
+}
+int menu_List(){
+
+	cout<<"1.Accept Information : "<<endl;
+	cout<<"2.Display Information:"<<endl;
+	cout<<"3.Calculate Grade: "<<endl;
+	cout<<"0.Exit : "<<endl;
+	int choice;
+   cout<<"Enter your choice: "<<endl;
+   cin>>choice;
+   return choice;
+   }
+int main(){
+	Student s1;
+	int rchoice;
+     while((rchoice=::menu_List())!=0){
+    	 switch(rchoice){
+    	 case 1:
+    		// s1.calculateGrade();
+    		 break;
+    	 case 2:
+    		// s1.displayRecord();
+    		 break;
+    	 case 3:
+    	//	 s1.calculateGrade();
+    		 break;
+    	 default:
+    		 clog<<"Have a great day"<<endl;
+    	 }
+     }
+
+  return 0;
+  }
+
+

@@ -1,0 +1,24 @@
+#include<iostream>
+int main( void ){
+	int num1 = 10;
+	int num2 = 10;
+	using namespace std;
+	cout <<  num1 << num2 << endl;
+	return 0;
+}
+int main2( void ){
+	int number = 10;
+	//printf("%d", number);
+	//std::cout <<  number << std::endl;
+
+	using namespace std;
+	cout <<  number << endl;
+	return 0;
+}
+int main1( void ){
+	//std::cout << "Hello World" << std::endl;
+
+	using namespace std;
+	cout << "Hello World" << endl;
+	return 0;
+}

@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+
+void printRecord(int value){
+	cout<<value<<end;
+
+}
+void printRecord(int &value){
+	cout<<value<<endl;
+}
+int main( void ){
+	int a = 10;
+	printRecord(10);
+	printRecord(a);
+
+
+
+
+	return 0;
+}

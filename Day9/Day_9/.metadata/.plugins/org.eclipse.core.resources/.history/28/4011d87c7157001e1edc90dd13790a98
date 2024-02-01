@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class A{
+public:
+	void showRecord( );
+};
+class B{
+private:
+	int num1;
+};
+void A::showRecord( void ){
+	B obj;
+	obj.num1 = 100;
+	cout << "Num1	:	" << obj.num1 <<endl;
+}
+int main( void ){
+	A a;
+	a.showRecord( );
+	return 0;
+}
+

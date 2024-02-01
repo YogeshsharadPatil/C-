@@ -1,0 +1,14 @@
+#include<iostream>
+#include<cstdlib>
+int main( void ){
+	//Memory allocation for single integer variable
+	int *ptr = (int*)malloc( sizeof( int ) );
+
+	//Dereferencing
+	*ptr = 123;
+	cout<<"Value	:	"<< *ptr << endl;	//Dereferencing
+
+	//Memory deallocation for single integer variable
+	free( ptr );
+	return 0;
+}

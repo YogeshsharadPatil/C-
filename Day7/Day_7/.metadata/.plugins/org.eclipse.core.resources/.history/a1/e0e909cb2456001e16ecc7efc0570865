@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main( void ){
+	try{
+		try{
+
+		}catch( string &ex ){
+			cout << "" <<endl;
+		}
+	}catch( string &ex ){
+		cout << "" <<endl;
+	}
+	catch( ... ){
+		cout << "Inside generic catch block" <<endl;
+	}
+	return 0;
+}
+

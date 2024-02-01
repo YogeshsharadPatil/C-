@@ -1,0 +1,1126 @@
+08:09:05 **** Clean-only build of configuration Debug for project Day_11.1 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_10.15
+ 
+08:38:38 **** Clean-only build of configuration Debug for project Day_11.1 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_10.15
+ 
+08:38:39 **** Build of configuration Debug for project Day_11.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.1"  ./src/Main.o   
+Finished building target: Day_11.1
+ 
+08:38:47 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+make: Nothing to be done for `all'.
+08:41:23 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:57:18: error: type 'Array' does not provide a subscript operator
+        int element = a1[ 2 ];
+                      ~~^ ~
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:41:27 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:57:18: error: type 'Array' does not provide a subscript operator
+        int element = a1[ 2 ];
+                      ~~^ ~
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:44:15 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.1"  ./src/Main.o   
+Finished building target: Day_11.1
+ 
+08:44:22 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+make: Nothing to be done for `all'.
+08:47:58 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:61:10: error: expression is not assignable
+        a1[ 2 ] = 300;
+        ~~~~~~~ ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:50:14 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.1
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.1"  ./src/Main.o   
+Finished building target: Day_11.1
+ 
+08:50:23 **** Incremental Build of configuration Debug for project Day_11.1 ****
+make all 
+make: Nothing to be done for `all'.
+09:03:12 **** Build of configuration Debug for project Day_11.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:18:10: error: non-const lvalue reference to type 'Complex' cannot bind to a value of unrelated type 'std::istream' (aka 'basic_istream<char>')
+                return cin;
+                       ^~~
+../src/Main.cpp:23:10: error: non-const lvalue reference to type 'Complex' cannot bind to a value of unrelated type 'std::ostream' (aka 'basic_ostream<char>')
+                return cout;
+                       ^~~~
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:03:29 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.2"  ./src/Main.o   
+Finished building target: Day_11.2
+ 
+09:04:00 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+make: Nothing to be done for `all'.
+09:06:05 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.2"  ./src/Main.o   
+Finished building target: Day_11.2
+ 
+09:06:16 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+make: Nothing to be done for `all'.
+09:08:40 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:40:2: error: type 'Complex' does not provide a call operator
+        c1( 10, 20 );   //c1. operator()( 10, 20 );
+        ^~
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:09:30 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.2"  ./src/Main.o   
+Finished building target: Day_11.2
+ 
+09:09:39 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+make: Nothing to be done for `all'.
+09:10:12 **** Incremental Build of configuration Debug for project Day_11.2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.2
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.2"  ./src/Main.o   
+Finished building target: Day_11.2
+ 
+09:13:46 **** Build of configuration Debug for project Day_11.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:41:2: error: use of undeclared identifier 'Complex'; did you mean '_Complex'?
+        Complex c1;
+        ^~~~~~~
+        _Complex
+../src/Main.cpp:41:2: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+        Complex c1;
+        ^
+                double
+../src/Main.cpp:43:6: error: invalid operands to binary expression ('std::istream' (aka 'basic_istream<char>') and '_Complex double')
+        cin >> c1;      //operator>>( cin, c1 )
+        ~~~ ^  ~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:618:1: note: candidate function template not viable: no known conversion from '_Complex double' to 'unsigned char *' for 2nd argument
+operator>>(basic_istream<char, _Traits>& __is, unsigned char* __s)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:626:1: note: candidate function template not viable: no known conversion from '_Complex double' to 'signed char *' for 2nd argument
+operator>>(basic_istream<char, _Traits>& __is, signed char* __s)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:670:1: note: candidate function template not viable: no known conversion from '_Complex double' to 'unsigned char &' for 2nd argument
+operator>>(basic_istream<char, _Traits>& __is, unsigned char& __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:678:1: note: candidate function template not viable: no known conversion from '_Complex double' to 'signed char &' for 2nd argument
+operator>>(basic_istream<char, _Traits>& __is, signed char& __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:635:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. '_Complex double')
+operator>>(basic_istream<_CharT, _Traits>& __is, _CharT& __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:295:1: note: candidate template ignored: could not match 'uniform_int_distribution<type-parameter-0-2>' against '_Complex double'
+operator>>(basic_istream<_CharT, _Traits>& __is,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:607:1: note: candidate template ignored: could not match '_CharT *' against '_Complex double'
+operator>>(basic_istream<_CharT, _Traits>& __is, _CharT* __s)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:1444:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against '_Complex double'
+operator>>(basic_istream<_CharT, _Traits>& __is,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:1580:1: note: candidate template ignored: could not match 'bitset<_Size>' against '_Complex double'
+operator>>(basic_istream<_CharT, _Traits>& __is, bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:1384:11: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = std::istream &, _Tp = _Complex double &]
+_Stream&& operator>>(_Stream&& __is, _Tp&& __x)
+          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:217:20: note: candidate function not viable: no known conversion from '_Complex double' to 'std::istream &(*)(std::istream &)' for 1st argument
+    basic_istream& operator>>(basic_istream& (*__pf)(basic_istream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:221:20: note: candidate function not viable: no known conversion from '_Complex double' to 'basic_ios<std::basic_istream<char>::char_type, std::basic_istream<char>::traits_type> &(*)(basic_ios<std::basic_istream<char>::char_type, std::basic_istream<char>::traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+    basic_istream& operator>>(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:226:20: note: candidate function not viable: no known conversion from '_Complex double' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_istream& operator>>(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:229:20: note: candidate function not viable: no known conversion from '_Complex double' to 'basic_streambuf<std::basic_istream<char>::char_type, std::basic_istream<char>::traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+    basic_istream& operator>>(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:230:20: note: candidate function not viable: no known conversion from '_Complex double' to 'bool &' for 1st argument
+    basic_istream& operator>>(bool& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:231:20: note: candidate function not viable: no known conversion from '_Complex double' to 'short &' for 1st argument
+    basic_istream& operator>>(short& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:232:20: note: candidate function not viable: no known conversion from '_Complex double' to 'unsigned short &' for 1st argument
+    basic_istream& operator>>(unsigned short& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:233:20: note: candidate function not viable: no known conversion from '_Complex double' to 'int &' for 1st argument
+    basic_istream& operator>>(int& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:234:20: note: candidate function not viable: no known conversion from '_Complex double' to 'unsigned int &' for 1st argument
+    basic_istream& operator>>(unsigned int& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:235:20: note: candidate function not viable: no known conversion from '_Complex double' to 'long &' for 1st argument
+    basic_istream& operator>>(long& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:236:20: note: candidate function not viable: no known conversion from '_Complex double' to 'unsigned long &' for 1st argument
+    basic_istream& operator>>(unsigned long& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:237:20: note: candidate function not viable: no known conversion from '_Complex double' to 'long long &' for 1st argument
+    basic_istream& operator>>(long long& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:238:20: note: candidate function not viable: no known conversion from '_Complex double' to 'unsigned long long &' for 1st argument
+    basic_istream& operator>>(unsigned long long& __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:239:20: note: candidate function not viable: no known conversion from '_Complex double' to 'float &' for 1st argument
+    basic_istream& operator>>(float& __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:240:20: note: candidate function not viable: no known conversion from '_Complex double' to 'double &' for 1st argument
+    basic_istream& operator>>(double& __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:241:20: note: candidate function not viable: no known conversion from '_Complex double' to 'long double &' for 1st argument
+    basic_istream& operator>>(long double& __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream:242:20: note: candidate function not viable: no known conversion from '_Complex double' to 'void *&' for 1st argument
+    basic_istream& operator>>(void*& __p);
+                   ^
+../src/Main.cpp:45:4: error: member reference base type '_Complex double' is not a structure or union
+        c1.setReal( c1.getReal() + 5 );
+        ~~^~~~~~~~
+../src/Main.cpp:45:16: error: member reference base type '_Complex double' is not a structure or union
+        c1.setReal( c1.getReal() + 5 );
+                    ~~^~~~~~~~
+../src/Main.cpp:46:4: error: member reference base type '_Complex double' is not a structure or union
+        c1.setImag( c1.getImag() + 5 );
+        ~~^~~~~~~~
+../src/Main.cpp:46:16: error: member reference base type '_Complex double' is not a structure or union
+        c1.setImag( c1.getImag() + 5 );
+                    ~~^~~~~~~~
+1 warning and 6 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:14:03 **** Incremental Build of configuration Debug for project Day_11.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.3"  ./src/Main.o   
+Finished building target: Day_11.3
+ 
+09:15:21 **** Incremental Build of configuration Debug for project Day_11.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.3"  ./src/Main.o   
+Finished building target: Day_11.3
+ 
+09:15:41 **** Incremental Build of configuration Debug for project Day_11.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:28:1: error: use of undeclared identifier 'Complex'; did you mean 'nutil::Complex'?
+Complex::Complex( void ) : real( 0 ), imag( 0 ){
+^~~~~~~
+nutil::Complex
+../src/Main.cpp:5:8: note: 'nutil::Complex' declared here
+        class Complex{
+              ^
+../src/Main.cpp:30:1: error: use of undeclared identifier 'Complex'; did you mean 'nutil::Complex'?
+Complex::Complex( int real, int imag ) : real( real ), imag( imag ){
+^~~~~~~
+nutil::Complex
+../src/Main.cpp:5:8: note: 'nutil::Complex' declared here
+        class Complex{
+              ^
+../src/Main.cpp:32:5: error: use of undeclared identifier 'Complex'; did you mean 'nutil::Complex'?
+int Complex::getReal( void )const{
+    ^~~~~~~
+    nutil::Complex
+../src/Main.cpp:5:8: note: 'nutil::Complex' declared here
+        class Complex{
+              ^
+../src/Main.cpp:35:6: error: use of undeclared identifier 'Complex'; did you mean 'nutil::Complex'?
+void Complex::setReal( const int real ){
+     ^~~~~~~
+     nutil::Complex
+../src/Main.cpp:5:8: note: 'nutil::Complex' declared here
+        class Complex{
+              ^
+../src/Main.cpp:38:5: error: use of undeclared identifier 'Complex'; did you mean 'nutil::Complex'?
+int Complex::getImag( void )const{
+    ^~~~~~~
+    nutil::Complex
+../src/Main.cpp:5:8: note: 'nutil::Complex' declared here
+        class Complex{
+              ^
+../src/Main.cpp:41:6: error: use of undeclared identifier 'Complex'; did you mean 'nutil::Complex'?
+void Complex::setImag( const int imag ){
+     ^~~~~~~
+     nutil::Complex
+../src/Main.cpp:5:8: note: 'nutil::Complex' declared here
+        class Complex{
+              ^
+../src/Main.cpp:44:36: error: unknown type name 'Complex'; did you mean '_Complex'?
+istream& operator>>( istream &cin, Complex &other ){
+                                   ^~~~~~~
+                                   _Complex
+../src/Main.cpp:44:36: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+istream& operator>>( istream &cin, Complex &other ){
+                                   ^
+                                           double
+../src/Main.cpp:46:14: error: member reference base type '_Complex double' is not a structure or union
+        cin >> other.real;
+               ~~~~~^~~~~
+../src/Main.cpp:48:14: error: member reference base type '_Complex double' is not a structure or union
+        cin >> other.imag;
+               ~~~~~^~~~~
+../src/Main.cpp:51:43: error: unknown type name 'Complex'; did you mean '_Complex'?
+ostream& operator<<( ostream &cout, const Complex &other ){
+                                          ^~~~~~~
+                                          _Complex
+../src/Main.cpp:51:43: warning: plain '_Complex' requires a type specifier; assuming '_Complex double'
+ostream& operator<<( ostream &cout, const Complex &other ){
+                                          ^
+                                                  double
+../src/Main.cpp:52:34: error: member reference base type 'const _Complex double' is not a structure or union
+        cout << "Real Number    :       "<< other.real <<endl;
+                                            ~~~~~^~~~~
+../src/Main.cpp:53:34: error: member reference base type 'const _Complex double' is not a structure or union
+        cout << "Imag Number    :       "<< other.imag <<endl;
+                                            ~~~~~^~~~~
+2 warnings and 12 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:15:53 **** Incremental Build of configuration Debug for project Day_11.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:48:15: error: 'real' is a private member of 'nutil::Complex'
+        cin >> other.real;
+                     ^
+../src/Main.cpp:7:7: note: declared private here
+                int real;
+                    ^
+../src/Main.cpp:50:15: error: 'imag' is a private member of 'nutil::Complex'
+        cin >> other.imag;
+                     ^
+../src/Main.cpp:8:7: note: declared private here
+                int imag;
+                    ^
+../src/Main.cpp:54:35: error: 'real' is a private member of 'nutil::Complex'
+        cout << "Real Number    :       "<< other.real <<endl;
+                                                  ^
+../src/Main.cpp:7:7: note: declared private here
+                int real;
+                    ^
+../src/Main.cpp:55:35: error: 'imag' is a private member of 'nutil::Complex'
+        cout << "Imag Number    :       "<< other.imag <<endl;
+                                                  ^
+../src/Main.cpp:8:7: note: declared private here
+                int imag;
+                    ^
+../src/Main.cpp:60:6: error: use of overloaded operator '>>' is ambiguous (with operand types 'std::istream' (aka 'basic_istream<char>') and 'nutil::Complex')
+        cin >> c1;      //operator>>( cin, c1 )
+        ~~~ ^  ~~
+../src/Main.cpp:22:19: note: candidate function
+                friend istream& operator>>( istream &cin, Complex &other );
+                                ^
+../src/Main.cpp:46:10: note: candidate function
+istream& operator>>( istream &cin, Complex &other ){
+         ^
+../src/Main.cpp:65:7: error: use of overloaded operator '<<' is ambiguous (with operand types 'std::ostream' (aka 'basic_ostream<char>') and 'nutil::Complex')
+        cout << c1;     //operator<<( cout, c1 );
+        ~~~~ ^  ~~
+../src/Main.cpp:24:19: note: candidate function
+                friend ostream& operator<<( ostream &cout, const Complex &other );
+                                ^
+../src/Main.cpp:53:10: note: candidate function
+ostream& operator<<( ostream &cout, const Complex &other ){
+         ^
+6 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:20 **** Incremental Build of configuration Debug for project Day_11.3 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.3
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.3"  ./src/Main.o   
+Finished building target: Day_11.3
+ 
+09:16:37 **** Incremental Build of configuration Debug for project Day_11.3 ****
+make all 
+make: Nothing to be done for `all'.
+09:19:28 **** Clean-only build of configuration Debug for project Day_11.4 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_11.3
+ 
+09:19:29 **** Build of configuration Debug for project Day_11.4 ****
+make all 
+Building file: ../src/Complex.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Complex.d" -MT"src/Complex.o" -o "src/Complex.o" "../src/Complex.cpp"
+Finished building: ../src/Complex.cpp
+ 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.4"  ./src/Complex.o ./src/Main.o   
+Finished building target: Day_11.4
+ 
+09:19:39 **** Incremental Build of configuration Debug for project Day_11.4 ****
+make all 
+make: Nothing to be done for `all'.
+09:40:38 **** Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.5"  ./src/Main.o   
+Finished building target: Day_11.5
+ 
+09:40:47 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+09:41:13 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:8:2: error: use of undeclared identifier 'swap_object'
+        swap_object( a, b );
+        ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:42:08 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.5"  ./src/Main.o   
+Finished building target: Day_11.5
+ 
+09:44:14 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+09:44:21 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+09:55:53 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:10:47: error: function definition is not allowed here
+void swap_object( int &object1, int &object2 ){
+                                              ^
+../src/Main.cpp:16:17: error: function definition is not allowed here
+int main( void ){
+                ^
+../src/Main.cpp:37:2: error: expected '}'
+}
+ ^
+../src/Main.cpp:4:49: note: to match this '{'
+void swap_object( char &object1, char &object2 ){
+                                                ^
+3 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:56:12 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.5"  ./src/Main.o   
+Finished building target: Day_11.5
+ 
+09:56:20 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+09:57:08 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:38:2: error: no matching function for call to 'swap_object'
+        swap_object( x, y );
+        ^~~~~~~~~~~
+../src/Main.cpp:4:6: note: candidate function not viable: no known conversion from 'double' to 'char &' for 1st argument
+void swap_object( char &object1, char &object2 ){
+     ^
+../src/Main.cpp:10:6: note: candidate function not viable: no known conversion from 'double' to 'int &' for 1st argument
+void swap_object( int &object1, int &object2 ){
+     ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:57:39 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.5"  ./src/Main.o   
+Finished building target: Day_11.5
+ 
+09:57:46 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+09:58:49 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:54:2: error: no matching function for call to 'swap_object'
+        swap_object( s1, s2 );
+        ^~~~~~~~~~~
+../src/Main.cpp:5:6: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') to 'char &' for 1st argument
+void swap_object( char &object1, char &object2 ){
+     ^
+../src/Main.cpp:11:6: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') to 'int &' for 1st argument
+void swap_object( int &object1, int &object2 ){
+     ^
+../src/Main.cpp:17:6: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') to 'double &' for 1st argument
+void swap_object( double &object1, double &object2 ){
+     ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:59:08 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.5
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.5"  ./src/Main.o   
+Finished building target: Day_11.5
+ 
+09:59:13 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+09:59:20 **** Incremental Build of configuration Debug for project Day_11.5 ****
+make all 
+make: Nothing to be done for `all'.
+10:04:28 **** Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:04:37 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:04:55 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:05:03 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:05:21 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:05:30 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:05:41 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:05:48 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+make: Nothing to be done for `all'.
+10:09:57 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:10:46 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:11:20 **** Incremental Build of configuration Debug for project Day_11.6 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.6
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.6"  ./src/Main.o   
+Finished building target: Day_11.6
+ 
+10:21:16 **** Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Finished building target: Day_11.7
+ 
+10:21:23 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:22:55 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:46:59: error: expected ';' at end of declaration list
+        friend ostream& operator<<( ostream &cout, Array &other )
+                                                                 ^
+                                                                 ;
+../src/Main.cpp:48:1: error: 'friend' used outside of class
+friend istream& operator>>( istream &cin, Array &other ){
+^
+../src/Main.cpp:48:43: error: use of class template 'Array' requires template arguments
+friend istream& operator>>( istream &cin, Array &other ){
+                                          ^
+../src/Main.cpp:5:7: note: template is declared here
+class Array{
+      ^
+../src/Main.cpp:55:1: error: 'friend' used outside of class
+friend ostream& operator<<( ostream &cout, Array &other ){
+^
+../src/Main.cpp:55:44: error: use of class template 'Array' requires template arguments
+friend ostream& operator<<( ostream &cout, Array &other ){
+                                           ^
+../src/Main.cpp:5:7: note: template is declared here
+class Array{
+      ^
+5 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:20 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:46:59: error: expected ';' at end of declaration list
+        friend ostream& operator<<( ostream &cout, Array &other )
+                                                                 ^
+                                                                 ;
+../src/Main.cpp:49:1: error: 'friend' used outside of class
+friend istream& operator>>( istream &cin, Array<T> &other ){
+^
+../src/Main.cpp:57:1: error: 'friend' used outside of class
+friend ostream& operator<<( ostream &cout, Array<T> &other ){
+^
+3 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:31 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:46:62: error: expected ';' at end of declaration list
+        friend ostream& operator<<( ostream &cout, Array<T> &other )
+                                                                    ^
+                                                                    ;
+../src/Main.cpp:49:1: error: 'friend' used outside of class
+friend istream& operator>>( istream &cin, Array<T> &other ){
+^
+../src/Main.cpp:57:1: error: 'friend' used outside of class
+friend ostream& operator<<( ostream &cout, Array<T> &other ){
+^
+3 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:38 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:49:1: error: 'friend' used outside of class
+friend istream& operator>>( istream &cin, Array<T> &other ){
+^
+../src/Main.cpp:57:1: error: 'friend' used outside of class
+friend ostream& operator<<( ostream &cout, Array<T> &other ){
+^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:46 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Undefined symbols for architecture x86_64:
+  "operator<<(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+  "operator>>(std::__1::basic_istream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Day_11.7] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:24:28 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Undefined symbols for architecture x86_64:
+  "operator<<(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+  "operator>>(std::__1::basic_istream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Day_11.7] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:24:48 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Undefined symbols for architecture x86_64:
+  "operator<<(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+  "operator>>(std::__1::basic_istream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Day_11.7] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:25:13 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:57:43: error: use of undeclared identifier 'T'
+ostream& operator<<( ostream &cout, Array<T> &other ){
+                                          ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:25:17 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Undefined symbols for architecture x86_64:
+  "operator<<(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+  "operator>>(std::__1::basic_istream<char, std::__1::char_traits<char> >&, Array<int>&)", referenced from:
+      _main in Main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Day_11.7] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:25:56 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Finished building target: Day_11.7
+ 
+10:26:07 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:26:22 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Finished building target: Day_11.7
+ 
+10:26:30 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:26:52 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.7
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.7"  ./src/Main.o   
+Finished building target: Day_11.7
+ 
+10:27:03 **** Incremental Build of configuration Debug for project Day_11.7 ****
+make all 
+make: Nothing to be done for `all'.
+10:29:11 **** Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:7:10: error: expected ';' after return statement
+        return 0
+                ^
+                ;
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:29:17 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.8"  ./src/Main.o   
+Finished building target: Day_11.8
+ 
+10:30:55 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.8"  ./src/Main.o   
+Finished building target: Day_11.8
+ 
+10:32:22 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.8"  ./src/Main.o   
+Finished building target: Day_11.8
+ 
+10:32:30 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+make: Nothing to be done for `all'.
+10:35:07 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.8"  ./src/Main.o   
+Finished building target: Day_11.8
+ 
+10:35:17 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+make: Nothing to be done for `all'.
+10:36:25 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.8"  ./src/Main.o   
+Finished building target: Day_11.8
+ 
+10:36:42 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:15:13: error: use of undeclared identifier 'v'
+                element = v.front( );
+                          ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:36:47 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.8"  ./src/Main.o   
+Finished building target: Day_11.8
+ 
+10:36:56 **** Incremental Build of configuration Debug for project Day_11.8 ****
+make all 
+make: Nothing to be done for `all'.
+18:50:00 **** Build of configuration Debug for project Day_11.9 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:8:1: error: expected expression
+public:
+^
+../src/Main.cpp:16:3: error: expected ';' at end of declaration list
+        }
+         ^
+         ;
+../src/Main.cpp:20:5: error: no member named 'acceptRecord' in 'Complex'
+        c1.acceptRecord( );
+        ~~ ^
+../src/Main.cpp:21:5: error: no member named 'printRecord' in 'Complex'
+        c1.printRecord( );
+        ~~ ^
+../src/Main.cpp:6:6: warning: private field 'real' is not used [-Wunused-private-field]
+        int real;
+            ^
+../src/Main.cpp:7:6: warning: private field 'imag' is not used [-Wunused-private-field]
+        int imag:
+            ^
+2 warnings and 4 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:50:50 **** Incremental Build of configuration Debug for project Day_11.9 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:8:1: error: expected expression
+public:
+^
+../src/Main.cpp:22:3: error: expected ';' at end of declaration list
+        }
+         ^
+         ;
+../src/Main.cpp:26:5: error: no member named 'acceptRecord' in 'Complex'
+        c1.acceptRecord( );
+        ~~ ^
+../src/Main.cpp:27:5: error: no member named 'printRecord' in 'Complex'
+        c1.printRecord( );
+        ~~ ^
+../src/Main.cpp:6:6: warning: private field 'real' is not used [-Wunused-private-field]
+        int real;
+            ^
+../src/Main.cpp:7:6: warning: private field 'imag' is not used [-Wunused-private-field]
+        int imag:
+            ^
+2 warnings and 4 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:51:41 **** Incremental Build of configuration Debug for project Day_11.9 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.9
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.9"  ./src/Main.o   
+Finished building target: Day_11.9
+ 
+19:46:16 **** Incremental Build of configuration Debug for project Day_11.9 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_11.9
+Invoking: MacOS X C++ Linker
+g++  -o "Day_11.9"  ./src/Main.o   
+Finished building target: Day_11.9
+ 
+19:46:23 **** Incremental Build of configuration Debug for project Day_11.9 ****
+make all 
+make: Nothing to be done for `all'.

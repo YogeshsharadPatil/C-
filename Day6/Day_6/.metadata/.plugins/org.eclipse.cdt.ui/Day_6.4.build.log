@@ -1,0 +1,15 @@
+11:50:03 **** Build of configuration Debug for project Day_6.4 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.4
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.4"  ./src/Main.o   
+Finished building target: Day_6.4
+ 
+
+11:50:05 Build Finished. 0 errors, 0 warnings. (took 2s.275ms)
+

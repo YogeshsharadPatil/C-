@@ -1,0 +1,25 @@
+#include<cstdio>
+
+namespace na{
+	int num1 = 10;
+}
+void show_record( ){
+	using namespace na;
+	printf("Num1	:	%d\n", num1);
+}
+void print_record( ){
+	using namespace na;
+	printf("Num1	:	%d\n", num1);
+}
+void display_record( ){
+	using namespace na;
+	printf("Num1	:	%d\n", num1);
+}
+int main( void ){
+	::show_record( );
+
+	::print_record( );
+
+	::display_record( );
+	return 0;
+}

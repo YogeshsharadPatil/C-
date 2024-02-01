@@ -1,0 +1,8 @@
+#include<cstdio>
+
+int main( void ){
+	namespace na{
+		int num1 = 10;
+	}
+	return 0;
+}

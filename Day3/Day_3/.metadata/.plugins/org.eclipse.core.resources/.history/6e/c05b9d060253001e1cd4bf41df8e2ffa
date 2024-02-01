@@ -1,0 +1,5 @@
+//Non static global variable
+int num1 = 10;	//Program Scope
+
+static int num2 = 20;		//Static global variable
+

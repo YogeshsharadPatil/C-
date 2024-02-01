@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+void swap_object( int &object1, int &object2 ){
+	int temp = object1;
+	object1 = object2;
+	object2 = temp;
+}
+int main( void ){
+	int a = 10;
+	int b = 20;
+
+	swap_object( a, b );
+
+	cout << "a	:	" << a << endl;
+	cout << "a	:	" << b << endl;
+	return 0;
+}

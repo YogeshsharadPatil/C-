@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+int *ptr = new int; //garbage value;
+cout<<*ptr<<endl;
+int[] ptr1 = new int;
+cout<<*ptr1<<endl;
+
+
+
+return 0;
+}
+
+
+

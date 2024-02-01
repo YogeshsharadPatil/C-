@@ -1,0 +1,5 @@
+23:28:28 **** Rebuild of configuration Debug for project Day11.2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Day11.2.exe "src\\Main.o" 
+Info: Nothing to build for Day11.2

@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class Array{
+private:
+	int size;
+	int *arr;
+public:
+	Array(){
+		this->size = 0;
+		this->arr = nullptr;
+	}
+	Array(int size){
+		this->size = size;
+		this->arr = new int(this->arr);
+	}
+};
+int main(){
+
+	Array a1(3);
+	array a2(a1);
+}

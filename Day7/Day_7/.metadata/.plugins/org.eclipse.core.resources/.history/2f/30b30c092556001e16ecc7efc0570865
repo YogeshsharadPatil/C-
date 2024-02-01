@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main( void ){
+	try{
+		try{
+			int ex = 0;
+			//string ex("exception" );
+			throw ex;
+		}catch( string &ex ){
+			cout << "Inside nested catch block" <<endl;
+		}
+	}catch( string &ex ){
+		cout << "Inside outer catch block" <<endl;
+	}
+	catch( ... ){
+		cout << "Inside generic catch block" <<endl;
+	}
+	return 0;
+}
+

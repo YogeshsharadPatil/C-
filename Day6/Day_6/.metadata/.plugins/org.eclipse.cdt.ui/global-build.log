@@ -1,0 +1,349 @@
+12:49:23 **** Clean-only build of configuration Debug for project Day_6.8 ****
+make clean 
+rm -rf ./src/Main.d ./src/Main.o
+rm -rf Day_6.7
+ 
+12:50:24 **** Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:7:6: warning: unused variable 'num2' [-Wunused-variable]
+        int num2 = 20;
+            ^
+../src/Main.cpp:9:13: warning: unused variable 'ptr1' [-Wunused-variable]
+        int *const ptr1 = &num1;
+                   ^
+2 warnings generated.
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+12:50:36 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:10:7: error: cannot assign to variable 'ptr1' with const-qualified type 'int *const'
+        ptr1 = &num2;
+        ~~~~ ^
+../src/Main.cpp:9:13: note: variable 'ptr1' declared const here
+        int *const ptr1 = &num1;
+        ~~~~~~~~~~~^~~~~~~~~~~~
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:51:29 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+12:51:37 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+12:52:52 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:12:19: error: default initialization of an object of const type 'const int *const'
+        const int *const ptr2;
+                         ^
+                              = NULL
+../src/Main.cpp:13:8: error: read-only variable is not assignable
+        *ptr2 = 60;     //Not OK
+        ~~~~~ ^
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:53:04 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:13:8: error: read-only variable is not assignable
+        *ptr2 = 60;     //Not OK
+        ~~~~~ ^
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:55:06 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:17:10: error: expected ';' after return statement
+        return 0
+                ^
+                ;
+1 error generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:55:12 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+12:55:19 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+12:56:26 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:22:20: warning: unused variable 'ptr2' [-Wunused-variable]
+        const Test *const ptr2 = &t2;
+                          ^
+1 warning generated.
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+12:56:37 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:23:13: error: cannot assign to variable 'ptr2' with const-qualified type 'const Test *const'
+        ptr2->num1 = 10;
+        ~~~~~~~~~~ ^
+../src/Main.cpp:22:20: note: variable 'ptr2' declared const here
+        const Test *const ptr2 = &t2;
+        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../src/Main.cpp:24:13: error: cannot assign to variable 'ptr2' with const-qualified type 'const Test *const'
+        ptr2->num2 = 20;
+        ~~~~~~~~~~ ^
+../src/Main.cpp:22:20: note: variable 'ptr2' declared const here
+        const Test *const ptr2 = &t2;
+        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:57:14 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:23:13: error: cannot assign to variable 'ptr2' with const-qualified type 'const Test *const'
+        ptr2->num1 = 10;
+        ~~~~~~~~~~ ^
+../src/Main.cpp:22:20: note: variable 'ptr2' declared const here
+        const Test *const ptr2 = &t1;
+        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../src/Main.cpp:24:13: error: cannot assign to variable 'ptr2' with const-qualified type 'const Test *const'
+        ptr2->num2 = 20;
+        ~~~~~~~~~~ ^
+../src/Main.cpp:22:20: note: variable 'ptr2' declared const here
+        const Test *const ptr2 = &t1;
+        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:57:20 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:01:46 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:01:53 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:03:43 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:03:52 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:05:07 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:05:12 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:05:18 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:08:12 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:23:14: error: cannot assign to non-static data member within const member function 'printRecord'
+                this->num1 = this->num1 + 5;
+                ~~~~~~~~~~ ^
+../src/Main.cpp:22:7: note: member function 'Test::printRecord' is declared const here
+        void printRecord( /* const Test *const this = &t1 */ ) const{
+        ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Main.cpp:26:14: error: cannot assign to non-static data member within const member function 'printRecord'
+                this->num2 = this->num2 + 5;
+                ~~~~~~~~~~ ^
+../src/Main.cpp:22:7: note: member function 'Test::printRecord' is declared const here
+        void printRecord( /* const Test *const this = &t1 */ ) const{
+        ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:42 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:09:17 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:11:30 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:11:38 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:17:57 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:18:07 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+make: Nothing to be done for `all'.
+13:19:10 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:21:27 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:21:53 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 
+13:22:07 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp:41:16: error: extraneous ')' before ';'
+        t2.showRecord );
+                      ^
+../src/Main.cpp:41:5: error: reference to non-static member function must be called
+        t2.showRecord );
+        ~~~^~~~~~~~~~
+2 errors generated.
+make: *** [src/Main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:22:56 **** Incremental Build of configuration Debug for project Day_6.8 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Day_6.8
+Invoking: MacOS X C++ Linker
+g++  -o "Day_6.8"  ./src/Main.o   
+Finished building target: Day_6.8
+ 

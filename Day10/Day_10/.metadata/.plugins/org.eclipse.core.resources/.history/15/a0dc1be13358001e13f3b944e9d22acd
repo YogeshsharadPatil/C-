@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+class Test{
+public:
+	void showRecord( void ){
+		cout << "void showRecord( void )" << endl;
+	}
+	static void displayRecord( void ){
+		cout << "static void displayRecord( void )" << endl;
+	}
+};
+int main( void ){
+	Test t;
+	t.showRecord( );
+	Test::displayRecord( );
+	return 0;
+}

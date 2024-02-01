@@ -1,0 +1,21 @@
+16:05:05 **** Rebuild of configuration Debug for project Day7.ReferenceofArray ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:5:7: warning: unnecessary parentheses in declaration of 'arr2' [-Wparentheses]
+    5 |   int (&arr2[3]) = arr1;
+      |       ^~~~~~~~~~
+..\src\Main.cpp:5:7: note: remove parentheses
+    5 |   int (&arr2[3]) = arr1;
+      |       ^~~~~~~~~~
+      |       -        -
+..\src\Main.cpp:5:9: error: declaration of 'arr2' as array of references
+    5 |   int (&arr2[3]) = arr1;
+      |         ^~~~
+..\src\Main.cpp:7:18: error: 'arr2' was not declared in this scope; did you mean 'arr1'?
+    7 |            cout<<arr2[i]<<" ";
+      |                  ^~~~
+      |                  arr1
+
+16:05:05 Build Failed. 2 errors, 1 warnings. (took 515ms)
+

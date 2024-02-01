@@ -1,0 +1,20 @@
+#include<cstdio>
+
+int num1 = 10;
+
+//File Scope
+namespace na{
+	int num1 = 20;
+
+	//Namespace scope
+	namespace na{	//Nested namespace
+		int num1 = 30;
+	}
+}
+
+int main( void ){
+	printf("Num1	:	%d\n", ::num1);	//20
+	printf("Num2	:	%d\n", na::num1);	//20
+	printf("Num3	:	%d\n", na::na::num1);	//30
+	return 0;
+}

@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int main( void ){
+	int a = 10;
+	int b = 20;
+
+	swap_object( a, b );
+
+	cout << "a	:	" << a << endl;
+	cout << "a	:	" << b << endl;
+	return 0;
+}

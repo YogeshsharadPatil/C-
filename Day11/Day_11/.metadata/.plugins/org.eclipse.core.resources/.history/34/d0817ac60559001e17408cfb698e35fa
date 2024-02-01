@@ -1,0 +1,29 @@
+#include<iostream>
+#include<complex>
+#include<stack>
+using namespace std;
+
+int main( void ){
+	stack<int> stk;
+	stk.push( 10 );
+	stk.push( 20 );
+	stk.push( 30 );
+
+	int element;
+	while( !stk.empty( ) ){
+		element = stk.top( );
+		cout << "Removed element is	:	" << element << endl;
+		stk.pop( );
+	}
+	return 0;
+}
+
+
+int main1( void ){
+	complex<double> c1;
+	c1.real( 10.5 );
+	c1.imag( 20.5 );
+	cout << "Real Number	:	" << c1.real() <<endl;
+	cout << "Imag Number	:	" << c1.imag() <<endl;
+	return 0;
+}

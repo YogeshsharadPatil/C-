@@ -1,0 +1,71 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+namespace exception{
+	class IllegalArgumentException{
+	private:
+		string message;
+	public:
+		IllegalArgumentException( string message = "Invalid argument" ){
+			this->message = message;
+		}
+		string getMessage( void )const{
+			return this->message;
+		}
+	};
+}
+
+using namespace exception;
+
+namespace nutil{
+	class Complex{
+	private:
+		int real;
+		int imag;
+	public:
+		Complex( int real = 0, int imag  = 0 ){
+			this->real = real;
+			this->imag = imag;
+		}
+		int getReal( void )const throw( ){
+			return this->real;
+		}
+		void setReal( const int real )throw( IllegalArgumentException ){
+			if( real < 0 )
+				throw IllegalArgumentException("Invalid real number");
+			this->real = real;
+		}
+		int getImag( void )const throw( ){
+			return this->imag;
+		}
+		void setImag( const int imag )throw( IllegalArgumentException ){
+			if( imag < 0 )
+				throw IllegalArgumentException("Invalid imag number");
+			this->imag = imag;
+		}
+	};
+}
+using namespace nutil;
+void accept_record( Complex &c1 ){
+	int real;
+	cout << "Enter real number	:	";
+	cin >> real;
+	c1.setReal( real );
+
+	int imag;
+	cout << "Enter imag number	:	";
+	cin >> imag;
+	c1.setImag( imag );
+}
+void print_record( const Complex &c1 ){
+	cout << c1.getReal( ) <<endl;
+	cout << c1.getImag( ) <<endl;
+}
+int main( void ){
+	Complex c1;
+
+	::accept_record( c1 );
+	::print_record( c1 );
+	return 0;
+}
